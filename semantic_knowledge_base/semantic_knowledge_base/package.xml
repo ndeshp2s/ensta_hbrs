@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-<name>mas_domestic_robotics</name>
+<name>semantic_knowledge_base</name>
 <version>0.1.0</version>
 <description>ROS metapackage for semantic knowledge base.</description>
 <license>GPLv3</license>
