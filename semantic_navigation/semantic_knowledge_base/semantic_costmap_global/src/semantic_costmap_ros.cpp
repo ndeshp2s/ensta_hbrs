@@ -42,8 +42,11 @@
 using namespace semantic_navigation;
 
 SemanticCostmapROS::SemanticCostmapROS(ros::NodeHandle* nh, std::string name, tf::TransformListener& tf, const std_msgs::String& type, const std_msgs::String& map) : nh_(nh),tf_(tf), name_(name), type_(type),map_(map){	
-	
+
+	_costmap_2d = new costmap_2d::Costmap2D();
+	_semantic_costmap_global = new costmap_2d::Costmap2D();
 	_costmap_2d_ros =  new costmap_2d::Costmap2DROS(name_, tf_);
+
 
 	if (type.data == "InflationSemanticCostmap"){
 	 	_semantic_costmap = new InflationSemanticCostmap();
@@ -54,7 +57,19 @@ SemanticCostmapROS::SemanticCostmapROS(ros::NodeHandle* nh, std::string name, tf
 }
 
 bool SemanticCostmapROS::prepareSemanticCostmap(){
+	_costmap_2d = _costmap_2d_ros->getCostmap (); 
+	_semantic_costmap_global = _semantic_costmap->getSemanticCostmap(_costmap_2d);
 
-	_semantic_costmap->buildSemanticCostmap();
+	if (!(_semantic_costmap_global == NULL))
+		return false;
+	else
+		return true;
+}
+
+bool SemanticCostmapROS::publishSemanticCostmap(double frequency){
+
+	//_costmap_2d_ros->mapUpdateLoop (frequency);
+	return false;
+	
 }
 

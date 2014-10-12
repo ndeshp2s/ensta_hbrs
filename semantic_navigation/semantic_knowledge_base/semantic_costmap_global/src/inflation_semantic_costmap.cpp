@@ -50,12 +50,19 @@ InflationSemanticCostmap::~ InflationSemanticCostmap(){
 
 }
 
-bool InflationSemanticCostmap::buildSemanticCostmap(){
+bool InflationSemanticCostmap::buildSemanticCostmap(costmap_2d::Costmap2D* costmap_2d){
 
-	return false; // not implemented yet
+	_semantic_costmap_global = costmap_2d;
+	
+	return true; // not implemented yet
 
 }
 
-costmap_2d::Costmap2D* InflationSemanticCostmap::getSemanticCostmap(){
+costmap_2d::Costmap2D* InflationSemanticCostmap::getSemanticCostmap(costmap_2d::Costmap2D* costmap_2d){
+	
+	if (!buildSemanticCostmap(costmap_2d))
+		return NULL;
+	else
+		return _semantic_costmap_global;
 
 }

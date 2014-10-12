@@ -55,13 +55,16 @@ namespace semantic_navigation{
 		SemanticCostmapROS(ros::NodeHandle* nh, std::string name,tf::TransformListener& tf, const std_msgs::String& type, const std_msgs::String& map);
 		virtual ~SemanticCostmapROS();
 
-		bool publishSemanticCostmap();
+		bool publishSemanticCostmap(double frequency);
 		bool prepareSemanticCostmap(); 
 
 	private:
 		void subscribe();
 		SemanticCostmap*  _semantic_costmap;
 		costmap_2d::Costmap2DROS* _costmap_2d_ros;
+		costmap_2d::Costmap2D* _costmap_2d;
+		costmap_2d::Costmap2D* _semantic_costmap_global;
+		
 
 		ros::NodeHandle* nh_;
 		std::string name_;

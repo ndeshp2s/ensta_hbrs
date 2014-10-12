@@ -48,8 +48,8 @@ namespace semantic_navigation{
 	public:
 		SemanticCostmap();
 		virtual ~SemanticCostmap();
-		virtual bool buildSemanticCostmap() = 0;
-		virtual costmap_2d::Costmap2D* getSemanticCostmap() = 0;
+		virtual bool buildSemanticCostmap(costmap_2d::Costmap2D* costmap_2d) = 0;
+		virtual costmap_2d::Costmap2D* getSemanticCostmap(costmap_2d::Costmap2D* costmap_2d) = 0;
 	};
 }
 #endif
