@@ -9,6 +9,8 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib_msgs
   move_base_msgs
   roscpp
+  tf
+  semantic_costmap_global
 )
 
 ## System dependencies are found with CMake's conventions
@@ -81,10 +83,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES semantic_navigation_coordinator
-#  CATKIN_DEPENDS actionlib actionlib_msgs move_base_msgs roscpp
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES semantic_navigation_coordinator
+  #CATKIN_DEPENDS actionlib actionlib_msgs move_base_msgs roscpp
+  #DEPENDS system_lib
 )
 
 ###########
@@ -95,7 +97,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(include)
 include_directories(
-  ${catkin_INCLUDE_DIRS}
+ ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a cpp library
@@ -114,6 +116,7 @@ add_executable(semantic_navigation_coordinator_node src/semantic_navigation_coor
 target_link_libraries(semantic_navigation_coordinator_node
   ${catkin_LIBRARIES}
   semantic_navigation_coordinator
+  semantic_costmap_global
 )
 
 #############

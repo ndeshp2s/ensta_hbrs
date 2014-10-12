@@ -38,7 +38,7 @@
  * Author: Niranjan Vilas Deshpande
  *         (niranjan.deshpande187@gmail.com)
  *********************************************************************/
-#include <ros/ros.h>
+
 #include "semantic_navigation_coordinator/semantic_navigation_coordinator.h"
 
 int main(int argc, char** argv){

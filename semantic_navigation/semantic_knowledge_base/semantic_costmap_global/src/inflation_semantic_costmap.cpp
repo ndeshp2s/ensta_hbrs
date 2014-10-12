@@ -49,6 +49,7 @@ InflationSemanticCostmap:: InflationSemanticCostmap(){
 
 InflationSemanticCostmap::~ InflationSemanticCostmap(){
 
+
 }
 
 bool InflationSemanticCostmap::buildSemanticCostmap(costmap_2d::Costmap2D* costmap_2d){

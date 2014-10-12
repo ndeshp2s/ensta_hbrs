@@ -44,11 +44,15 @@
 #include <costmap_2d/costmap_2d.h>
 
 namespace semantic_navigation{
-
+	/* @class : SemanticCostmap Base Class for Semantic Cost map
+	 * @brief : pure virtual base class
+	*/
 	class SemanticCostmap {
 	public:
-		SemanticCostmap();
-		virtual ~SemanticCostmap();
+		/* @brief : abstract interface for building semantic cost mapUpdateLoop
+		 * @param : costmap_2d::Costmap2D* costmap built from raw map given by coordinator
+		*/
+		
 		virtual bool buildSemanticCostmap(costmap_2d::Costmap2D* costmap_2d) = 0;
 		virtual costmap_2d::Costmap2D* getSemanticCostmap(costmap_2d::Costmap2D* costmap_2d) = 0;
 	};

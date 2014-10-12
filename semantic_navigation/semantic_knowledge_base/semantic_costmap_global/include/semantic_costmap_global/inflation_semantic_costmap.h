@@ -49,7 +49,7 @@ namespace semantic_navigation
 	
 	public:
 		InflationSemanticCostmap();
-		virtual ~InflationSemanticCostmap();
+		~InflationSemanticCostmap();
 		virtual bool buildSemanticCostmap(costmap_2d::Costmap2D* costmap_2d);
 		virtual costmap_2d::Costmap2D* getSemanticCostmap(costmap_2d::Costmap2D* costmap_2d);
 

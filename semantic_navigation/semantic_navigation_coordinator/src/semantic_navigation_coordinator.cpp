@@ -38,43 +38,28 @@
  *         (niranjan.deshpande187@gmail.com)
  *********************************************************************/
 
-#ifndef _SEMANTIC_COSTMAP_ROS_
-#define _SEMANTIC_COSTMAP_ROS_
+#include <semantic_navigation_coordinator/semantic_navigation_coordinator.h>
 
-#include "semantic_costmap_global/inflation_semantic_costmap.h"
-#include <costmap_2d/costmap_2d_ros.h>
-#include <std_msgs/String.h>
-#include <string>
-#include <tf/transform_listener.h>
-#include <ros/ros.h>
+using namespace semantic_navigation;
 
-namespace semantic_navigation{
 
-	class SemanticCostmapROS{
+SemanticNavigationCoordinator::SemanticNavigationCoordinator(tf::TransformListener* tf) {
 
-	public:
-		SemanticCostmapROS(ros::NodeHandle* nh, std::string name,tf::TransformListener& tf, const std_msgs::String& type, const std_msgs::String& map);
-		~SemanticCostmapROS();
+	ros::NodeHandle* nh;
+	ros::Rate loop_rate(10);
+	std_msgs::String map, type;
+	std::string name = "semantic_costmap_global";
+	map.data = "map";
+	type.data = "inflation_semantic_costmap";
+	_semantic_costmap_ros = new SemanticCostmapROS(nh, name, *tf, type, map);
+}	
 
-		bool publishSemanticCostmap(double frequency);
-		bool prepareSemanticCostmap(); 
 
-	private:
-		void subscribe();
-		SemanticCostmap*  _semantic_costmap;
-		costmap_2d::Costmap2DROS* _costmap_2d_ros;
-		costmap_2d::Costmap2D* _costmap_2d;
-		costmap_2d::Costmap2D* _semantic_costmap_global;
-		
-
-		ros::NodeHandle* nh_;
-		std::string name_;
-		tf::TransformListener& tf_;
-		std_msgs::String map_;	
-		std_msgs::String type_;
-		
-
-	};
-
+SemanticNavigationCoordinator::~SemanticNavigationCoordinator() {
 }
-#endif
+
+int SemanticNavigationCoordinator::runLoop(move_base_msgs::MoveBaseGoal &goal){
+}
+
+
+
