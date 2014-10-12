@@ -5,7 +5,7 @@ project(ensta_robots)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  robot_model
+ # robot_model
 )
 
 ## System dependencies are found with CMake's conventions
