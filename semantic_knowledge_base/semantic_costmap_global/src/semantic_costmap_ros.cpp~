@@ -12,6 +12,6 @@ SemanticCostmapROS::SemanticCostmapROS(const std_msgs::String& type){
 
 bool SemanticCostmapROS::prepareSemanticCostmap(){
 
-	_semantic_costmap->buildSemanticCostmap();
+	//_semantic_costmap->buildSemanticCostmap();
 }
 

@@ -17,7 +17,7 @@ public:
 
 private:
 	void subscribe();
-	SemanticCostmap*  _semantic_costmap;
+	//SemanticCostmap*  _semantic_costmap;
 
 };
 

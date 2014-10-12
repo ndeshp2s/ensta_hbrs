@@ -102,18 +102,19 @@ include_directories(
 
 ## Declare a cpp library
 add_library(semantic_costmap_global
-  src/semantic_costmap_global.cpp
+  src/inflation_semantic_costmap.cpp
+  src/semantic_costmap_ros.cpp
 )
 
 ## Declare a cpp executable
-add_executable(semantic_costmap_global_node src/main.cpp)
+#add_executable(semantic_costmap_global_node src/main.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(semantic_costmap_global_node semantic_costmap_global_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(semantic_costmap_global_node
+ target_link_libraries(semantic_costmap_global
    ${catkin_LIBRARIES}
  )
 

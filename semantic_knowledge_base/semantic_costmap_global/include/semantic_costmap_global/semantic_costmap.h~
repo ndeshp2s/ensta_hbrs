@@ -5,7 +5,7 @@ class SemanticCostmap {
 public:
 	SemanticCostmap();
 	virtual ~SemanticCostmap();
-	virtual bool buildSemanticCostmap() = 0;
+        virtual bool buildSemanticCostmap() = 0;
 };
 
 #endif
