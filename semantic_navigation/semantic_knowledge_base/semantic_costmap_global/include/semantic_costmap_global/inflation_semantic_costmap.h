@@ -36,8 +36,10 @@
  *
  * Author: Niranjan Vilas Deshpande
  *         (niranjan.deshpande187@gmail.com)
+ * Supervised by: Sven Schneider
+ *                Prof. Dr. Paul G. Ploeger
+ *		  Prof. Dr. David Filliat
  *********************************************************************/
-
 #ifndef _INFLATION_SEMANTIC_COSTMAP_
 #define _INFLATION_SEMANTIC_COSTMAP_
 

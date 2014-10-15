@@ -4,7 +4,7 @@ project(semantic_planner_global)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS nav_core)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -76,8 +76,8 @@ find_package(catkin REQUIRED)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES semantic_planner_global
+  INCLUDE_DIRS include
+  LIBRARIES semantic_planner_global
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
@@ -88,12 +88,12 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
+ include_directories(include)
 
 ## Declare a cpp library
-# add_library(semantic_planner_global
-#   src/${PROJECT_NAME}/semantic_planner_global.cpp
-# )
+ add_library(semantic_planner_global
+   src/semantic_planner_global.cpp
+ )
 
 ## Declare a cpp executable
 # add_executable(semantic_planner_global_node src/semantic_planner_global_node.cpp)
@@ -103,9 +103,9 @@ catkin_package(
 # add_dependencies(semantic_planner_global_node semantic_planner_global_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(semantic_planner_global_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(semantic_planner_global
+   ${catkin_LIBRARIES}
+ )
 
 #############
 ## Install ##

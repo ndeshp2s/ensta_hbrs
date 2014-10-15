@@ -36,6 +36,9 @@
  *
  * Author: Niranjan Vilas Deshpande
  *         (niranjan.deshpande187@gmail.com)
+ * Supervised by: Sven Schneider
+ *                Prof. Dr. Paul G. Ploeger
+ *		  Prof. Dr. David Filliat
  *********************************************************************/
 
 #ifndef _SEMANTIC_COSTMAP_ROS_

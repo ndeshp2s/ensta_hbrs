@@ -1,5 +1,4 @@
 /*********************************************************************
-/*********************************************************************
  *
  * Software License Agreement (BSD License)
  *
@@ -37,6 +36,9 @@
  *
  * Author: Niranjan Vilas Deshpande
  *         (niranjan.deshpande187@gmail.com)
+ * Supervised by: Sven Schneider
+ *                Prof. Dr. Paul G. Ploeger
+ *		  Prof. Dr. David Filliat
  *********************************************************************/
 
 #include "semantic_navigation_coordinator/semantic_navigation_coordinator.h"

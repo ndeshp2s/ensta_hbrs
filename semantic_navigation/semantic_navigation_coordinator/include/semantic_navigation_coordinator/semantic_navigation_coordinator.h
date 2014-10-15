@@ -36,6 +36,9 @@
  *
  * Author: Niranjan Vilas Deshpande
  *         (niranjan.deshpande187@gmail.com)
+ * Supervised by: Sven Schneider
+ *                Prof. Dr. Paul G. Ploeger
+ *		  Prof. Dr. David Filliat
  *********************************************************************/
 
 #ifndef _SEMANTIC_NAVIGATION_COORDINATOR_
@@ -64,6 +67,8 @@ namespace semantic_navigation{
 		int runLoop(move_base_msgs::MoveBaseGoal &goal);
 
 		SemanticCostmapROS* _semantic_costmap_ros;
+		
+		double _inflation_radius;
 		
 		//int runLoop(semantic_navigation_msgs::SemanticGoal &goal);
 	};

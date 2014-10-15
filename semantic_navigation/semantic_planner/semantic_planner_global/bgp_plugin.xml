@@ -1,0 +1,5 @@
+ <library path="lib/libsemantic_planner_global">
+  <class name="semantic_planner_global/SemanticPlannerGlobal" type="semantic_navigation::SemanticPlannerGlobal" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>This is a semantic information based global planner plugin.</description>
+  </class>
+ </library>

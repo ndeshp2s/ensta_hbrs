@@ -40,32 +40,27 @@
  *                Prof. Dr. Paul G. Ploeger
  *		  Prof. Dr. David Filliat
  *********************************************************************/
+#include "pluginlib/class_list_macros.h"
+#include "semantic_planner_global/semantic_planner_global.h"
 
-#include <semantic_navigation_coordinator/semantic_navigation_coordinator.h>
+//Registering semantic_planner_global as a plugin of BaseGlobalPlanner
+PLUGINLIB_EXPORT_CLASS(semantic_navigation::SemanticPlannerGlobal, nav_core::BaseGlobalPlanner);
 
 using namespace semantic_navigation;
 
-
-SemanticNavigationCoordinator::SemanticNavigationCoordinator(tf::TransformListener* tf) {
-
-	ros::NodeHandle* nh;
-	ros::Rate loop_rate(10);
-	std_msgs::String map, type;
-	std::string name = "semantic_costmap_global";
-	map.data = "map";
-	type.data = "inflation_semantic_costmap";
-	_semantic_costmap_ros = new SemanticCostmapROS(nh, name, *tf, type, map);
-
-	nh->param("/semantic_navigation_coordinator/semantic_costmap_global/inflation_radius", _inflation_radius, 0.0);	
-
-}	
-
-
-SemanticNavigationCoordinator::~SemanticNavigationCoordinator() {
+SemanticPlannerGlobal::SemanticPlannerGlobal(){
 }
 
-int SemanticNavigationCoordinator::runLoop(move_base_msgs::MoveBaseGoal &goal){
+SemanticPlannerGlobal::~SemanticPlannerGlobal(){
 }
 
+bool SemanticPlannerGlobal::makePlan(const geometry_msgs::PoseStamped& start, const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan){
+
+	return false;
+
+}
+
+void SemanticPlannerGlobal::initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros){
+}
 
 

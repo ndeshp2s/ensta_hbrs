@@ -41,31 +41,24 @@
  *		  Prof. Dr. David Filliat
  *********************************************************************/
 
-#include <semantic_navigation_coordinator/semantic_navigation_coordinator.h>
+#ifndef _SEMANTIC_PLANNER_GLOBAL_
+#define _SEMANTIC_PLANNER_GLOBAL_
 
-using namespace semantic_navigation;
+#include <nav_core/base_global_planner.h>
+
+namespace semantic_navigation {
+	
+	class SemanticPlannerGlobal:public nav_core::BaseGlobalPlanner{
+	public:
+		SemanticPlannerGlobal();
+		~SemanticPlannerGlobal();
+
+		virtual bool makePlan(const geometry_msgs::PoseStamped& start, const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan);
+		virtual void initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
+		
+			
+	};
 
 
-SemanticNavigationCoordinator::SemanticNavigationCoordinator(tf::TransformListener* tf) {
-
-	ros::NodeHandle* nh;
-	ros::Rate loop_rate(10);
-	std_msgs::String map, type;
-	std::string name = "semantic_costmap_global";
-	map.data = "map";
-	type.data = "inflation_semantic_costmap";
-	_semantic_costmap_ros = new SemanticCostmapROS(nh, name, *tf, type, map);
-
-	nh->param("/semantic_navigation_coordinator/semantic_costmap_global/inflation_radius", _inflation_radius, 0.0);	
-
-}	
-
-
-SemanticNavigationCoordinator::~SemanticNavigationCoordinator() {
 }
-
-int SemanticNavigationCoordinator::runLoop(move_base_msgs::MoveBaseGoal &goal){
-}
-
-
-
+#endif
