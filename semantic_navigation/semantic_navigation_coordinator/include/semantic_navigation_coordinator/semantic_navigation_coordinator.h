@@ -55,6 +55,8 @@
 #include <std_msgs/String.h>
 #include <semantic_costmap_global/semantic_costmap_ros.h>
 #include <nav_core/base_global_planner.h>
+#include <semantic_planner_global/semantic_planner_global.h>
+
 #include <pluginlib/class_loader.h>
 
 

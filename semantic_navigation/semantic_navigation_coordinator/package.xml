@@ -46,7 +46,9 @@
   <build_depend>roscpp</build_depend>
   <build_depend>costmap_2d</build_depend>
   <build_depend>semantic_costmap_global</build_depend>
+  <build_depend>semantic_planner_global</build_depend>
 
+  <run_depend>semantic_planner_global</run_depend>
   <run_depend>nav_msgs</run_depend>	
   <run_depend>std_msgs</run_depend>
   <run_depend>tf</run_depend>

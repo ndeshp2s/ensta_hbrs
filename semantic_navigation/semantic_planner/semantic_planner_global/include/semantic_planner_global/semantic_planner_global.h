@@ -44,7 +44,16 @@
 #ifndef _SEMANTIC_PLANNER_GLOBAL_
 #define _SEMANTIC_PLANNER_GLOBAL_
 
+#include <ros/ros.h>
+#include <costmap_2d/costmap_2d_ros.h>
+#include <costmap_2d/costmap_2d.h> 
 #include <nav_core/base_global_planner.h>
+#include <geometry_msgs/PoseStamped.h>
+#include <semantic_costmap_global/semantic_costmap_ros.h>
+#include <angles/angles.h>
+
+
+
 
 namespace semantic_navigation {
 	
@@ -55,6 +64,7 @@ namespace semantic_navigation {
 
 		virtual bool makePlan(const geometry_msgs::PoseStamped& start, const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan);
 		virtual void initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
+		void initialize(std::string name, semantic_navigation::SemanticCostmapROS* costmap_ros){};
 		
 			
 	};

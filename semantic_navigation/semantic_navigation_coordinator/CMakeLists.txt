@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
   semantic_costmap_global
+  semantic_planner_global
 )
 
 ## System dependencies are found with CMake's conventions

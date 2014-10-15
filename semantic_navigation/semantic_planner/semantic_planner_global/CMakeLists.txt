@@ -4,9 +4,15 @@ project(semantic_planner_global)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS 
-	nav_core 
-	semantic_costmap_global
+find_package(catkin REQUIRED COMPONENTS
+  base_local_planner
+  costmap_2d
+  eigen
+  nav_core
+  pluginlib
+  roscpp
+  semantic_costmap_global
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -79,9 +85,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES semantic_planner_global
-#  CATKIN_DEPENDS other_catkin_pkg
+  INCLUDE_DIRS include
+  LIBRARIES semantic_planner_global
+#  CATKIN_DEPENDS base_local_planner costmap_2d eigen nav_core pluginlib roscpp semantic_costmap_global tf
 #  DEPENDS system_lib
 )
 
@@ -91,10 +97,13 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
- include_directories(include)
+include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
 
 ## Declare a cpp library
- add_library(semantic_planner_global
+add_library(semantic_planner_global
    src/semantic_planner_global.cpp
  )
 
