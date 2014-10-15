@@ -44,11 +44,18 @@
 #ifndef _SEMANTIC_NAVIGATION_COORDINATOR_
 #define _SEMANTIC_NAVIGATION_COORDINATOR_
 
+
+
+#include <vector>
+#include <string>
+
 #include <ros/ros.h>
 #include <tf/transform_listener.h>
 #include <move_base_msgs/MoveBaseGoal.h>
 #include <std_msgs/String.h>
 #include <semantic_costmap_global/semantic_costmap_ros.h>
+#include <nav_core/base_global_planner.h>
+#include <pluginlib/class_loader.h>
 
 
 namespace semantic_navigation{
@@ -65,12 +72,15 @@ namespace semantic_navigation{
 		virtual ~SemanticNavigationCoordinator();
 	private:
 		int runLoop(move_base_msgs::MoveBaseGoal &goal);
-
+		std::string global_planner;
 		SemanticCostmapROS* _semantic_costmap_ros;
-		
+		boost::shared_ptr<nav_core::BaseGlobalPlanner> global_planner_;
+
 		double _inflation_radius;
 		
 		//int runLoop(semantic_navigation_msgs::SemanticGoal &goal);
+
+		pluginlib::ClassLoader<nav_core::BaseGlobalPlanner> bgp_loader_;
 	};
 }
 
