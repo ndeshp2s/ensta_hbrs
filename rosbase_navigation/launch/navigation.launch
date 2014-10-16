@@ -2,7 +2,9 @@
 	<master auto="start"/>
 	
 	<!-- Run the map server (you can run it here or in another terminal) -->
-	<!-- <node name="map_server" pkg="map_server" type="map_server" args="path_to_map.yaml"/> -->
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find rosbase_navigation)/config/map.yaml">
+	<param name= "frame_id" value="/map"/>
+	</node>
 
 	<!--- Run AMCL -->
 	<include file="$(find rosbase_navigation)/launch/amcl.launch" />

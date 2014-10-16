@@ -1,0 +1,15 @@
+digraph G {
+"base_link" -> "base_laser_link"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 212.000 \nBuffer length: 4.900 sec\n"];
+"base_footprint" -> "base_link"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 212.000 \nBuffer length: 4.900 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 212.000 \nBuffer length: 4.900 sec\n"];
+"base_link" -> "back_sonar"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"base_link" -> "front_sonar"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"base_link" -> "top_plate"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"center_wheel" -> "center_hubcap"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"swivel" -> "center_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 19.257 Hz\nMost recent transform: 1413420455.505 \nBuffer length: 4.933 sec\n"];
+"base_link" -> "left_hub"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"left_hub" -> "left_wheel_joint"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"base_link" -> "right_hub"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"right_hub" -> "right_wheel_joint"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.206 Hz\nMost recent transform: 1413420456.028 \nBuffer length: 4.966 sec\n"];
+"base_link" -> "swivel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 19.257 Hz\nMost recent transform: 1413420455.505 \nBuffer length: 4.933 sec\n"];
+}
