@@ -16,5 +16,6 @@
 		<param name="base_global_planner" type="string" value="navfn/NavfnROS" />
 		<param name="conservative_reset_dist" type="double" value="3.0" />
 		<param name="controller_frequency" type="double" value="15.0" />
+		<remap from="cmd_vel" to="/p3dx/cmd_vel" />
 	</node>
 </launch>
