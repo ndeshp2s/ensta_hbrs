@@ -16,7 +16,7 @@
    {
      nh_ = nh;
      //set up the publisher for the cmd_vel topic
-     cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("pioneer3dx/cmd_vel", 1);
+     cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("p3dx/cmd_vel", 1);
    }
  
    //! Loop forever while sending drive commands based on keyboard input
