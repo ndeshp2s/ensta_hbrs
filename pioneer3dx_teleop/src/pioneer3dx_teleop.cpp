@@ -33,7 +33,7 @@
     while(nh_.ok()){
 
       std::cin.getline(cmd, 50);
-      if(cmd[0]!='+' && cmd[0]!='l' && cmd[0]!='-' && cmd[0]!='r' && cmd[0]!='s' && cmd[0]!='.')
+      if(cmd[0]!=119 && cmd[0]!=113 && cmd[0]!=115 && cmd[0]!=101 && cmd[0]!=120 && cmd[0]!='.')
       {
         std::cout << "unknown command:" << cmd << "\n";
         continue;
@@ -41,33 +41,41 @@
 
       base_cmd.linear.x = base_cmd.linear.y = base_cmd.angular.z = 0.0;   
       //move forward
-      if(cmd[0]=='+'){
-        base_cmd.linear.x = 0.2;
+      if(cmd[0]==119){
+        base_cmd.linear.x = 0.3;
 	base_cmd.angular.z = 0.0;
       }
       //move backward
-      else if(cmd[0]=='-'){
-        base_cmd.linear.x = -0.20;
+      else if(cmd[0]==115){
+        base_cmd.linear.x = -0.3;
 	base_cmd.angular.z = 0.0;
       }
       //turn left (yaw) and drive forward at the same time
-      else if(cmd[0]=='l'){
+      else if(cmd[0]==113){
         base_cmd.angular.z = 0.20;
-        base_cmd.linear.x = 0.20;
+        //base_cmd.linear.x = 0.20;
       } 
       //turn right (yaw) and drive forward at the same time
-      else if(cmd[0]=='r'){
+      else if(cmd[0]==101){
         base_cmd.angular.z = -0.20;
-        base_cmd.linear.x = 0.20;
+        //base_cmd.linear.x = 0.20;
       } 
-      //stop
-      else if(cmd[0]=='s'){
-        base_cmd.angular.z = 0.0;
-        base_cmd.linear.x = 0.0;
-      }
+      
       //quit
       else if(cmd[0]=='.'){
         break;
+      }
+
+      //pause
+      else if(cmd[0]==120){
+        base_cmd.angular.z = 0.0;
+        base_cmd.linear.x = 0.0;
+      }
+
+      //stop
+      else {
+        base_cmd.angular.z = 0.0;
+        base_cmd.linear.x = 0.0;
       }
       
       //publish the assembled command

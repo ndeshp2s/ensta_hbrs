@@ -1,0 +1,17 @@
+<launch>
+
+  
+	  <!-- http://www.ros.org/wiki/map_server -->
+	  <!-- Use demo_navigation_gmapping.launch to make a map and save it to disk -->
+
+
+	  <node pkg="amcl" type="amcl" name="amcl" >
+	    <rosparam file="$(find pioneer3dx_apps)/config/amcl/amcl.yaml" command="load"  />
+	    <remap from="scan" to="/p3dx/laser/scan" />
+	    
+	  </node>
+	
+	  
+	
+	
+</launch>
