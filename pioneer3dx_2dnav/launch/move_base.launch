@@ -59,17 +59,26 @@
 	</node>-->
 
 
-        <node pkg="move_base" type="move_base" respawn="false" name="p3dx_move_base" output="screen" clear_params="true">
-        <!--<node pkg="move_base" type="move_base" name="p3dx_move_base" >-->
+        <!--<node pkg="move_base" type="move_base" respawn="false" name="p3dx_move_base" output="screen" clear_params="true">
+        <node pkg="move_base" type="move_base" name="p3dx_move_base" >
 		<rosparam file="$(find pioneer3dx_2dnav)/config/move_base_params.yaml" command="load"/>
 		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
 		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
 		<rosparam file="$(find pioneer3dx_2dnav)/config/global_costmap_params.yaml" command="load"  />
 		<rosparam file="$(find pioneer3dx_2dnav)/config/local_costmap_params.yaml" command="load"/>
-		<!--<rosparam file="$(find pioneer3dx_2dnav)/config/dwa_local_planner_params.yaml" command="load" ns="DWAPlannerROS" />-->
+		<rosparam file="$(find pioneer3dx_2dnav)/config/dwa_local_planner_params.yaml" command="load" ns="DWAPlannerROS" />
 		<rosparam file="$(find pioneer3dx_2dnav)/config/base_local_planner_params.yaml" command="load" ns="DWAPlannerROS" />
-	</node>
+	</node>-->
 
+	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+		
+    		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    		<rosparam file="$(find pioneer3dx_2dnav)/config/local_costmap_params.yaml" command="load" />
+    		<rosparam file="$(find pioneer3dx_2dnav)/config/global_costmap_params.yaml" command="load" />
+    		<rosparam file="$(find pioneer3dx_2dnav)/config/base_local_planner_params.yaml" command="load" />
+    		
+  	</node>
 
 
 </launch>

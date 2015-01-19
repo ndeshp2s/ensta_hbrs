@@ -82,7 +82,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES simple_layers
-#  CATKIN_DEPENDS costmap_2d dynamic_reconfigure roscpp
+  CATKIN_DEPENDS costmap_2d dynamic_reconfigure roscpp
 #  DEPENDS system_lib
 )
 
