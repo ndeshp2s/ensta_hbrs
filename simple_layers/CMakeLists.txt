@@ -99,7 +99,7 @@ include_directories(
 
 ## Declare a cpp library
 add_library(simple_layer src/simple_layer.cpp)
-add_library(grid_layer src/grid_layer.cpp)
+add_library(structure_layer src/structure_layer.cpp)
 
 ## Declare a cpp executable
 # add_executable(simple_layers_node src/simple_layers_node.cpp)

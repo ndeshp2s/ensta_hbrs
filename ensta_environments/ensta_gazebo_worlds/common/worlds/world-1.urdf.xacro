@@ -36,13 +36,13 @@
 		<visual>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="20 0.01 2.60" />
+				<box size="20 0.50 2.60" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="20.02 0.03 2.62" />
+				<box size="20.02 0.53 2.62" />
 			</geometry>
 		</collision>
 	</link>
@@ -63,13 +63,13 @@
 		<visual>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.01 20 2.60" />
+				<box size="0.50 20 2.60" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.03 20.02 2.62" />
+				<box size="0.53 20.02 2.62" />
 			</geometry>
 		</collision>
 	</link>
@@ -90,13 +90,13 @@
 		<visual>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="20 0.01 2.60" />
+				<box size="20 0.50 2.60" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="20.2 0.03 2.62" />
+				<box size="20.2 0.53 2.62" />
 			</geometry>
 		</collision>
 	</link>
@@ -118,13 +118,13 @@
 		<visual>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.01 20 2.60" />
+				<box size="0.50 20 2.60" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.03 20.02 2.62" />
+				<box size="0.53 20.02 2.62" />
 			</geometry>
 		</collision>
 	</link>
