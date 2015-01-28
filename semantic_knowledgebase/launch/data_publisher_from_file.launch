@@ -7,4 +7,9 @@
          <param name="filename" type="string" value="$(find semantic_knowledgebase)/data/object_list.yaml" />
     </node> 
 
+    <node pkg="semantic_knowledgebase" type="entity_list_server.py" name="entity_list_server" output="screen">
+         <param name="filename" type="string" value="$(find semantic_knowledgebase)/data/object_list.yaml" />
+    </node> 
+
+
 </launch>

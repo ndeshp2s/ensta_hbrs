@@ -23,8 +23,8 @@ def publish(objects):
         obj.name = t['name']
         obj.geometry.pose = message_converter.convert_dictionary_to_ros_message('geometry_msgs/Pose',t['geometry']['pose'])
         obj.geometry.bounding_box = message_converter.convert_dictionary_to_ros_message('semantic_knowledgebase/BoundingBox',t['geometry']['bounding_box'])
-        object_list.objects.append(obj)
         obj.semantics.category = t['semantics']['category']
+        object_list.objects.append(obj)
         
         object_pub.publish(object_list)
     return
