@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- send world urdf to param server -->
+    <param name="light_object" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/box.urdf.xacro" /> 
+	
+    <!-- spawn uploaded object model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="box1" args="-urdf -param light_object -model box1" respawn="false" output="screen" /> 
+
+</launch>

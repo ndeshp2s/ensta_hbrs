@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- send world urdf to param server -->
+    <param name="light_object" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/light_object.urdf.xacro" /> 
+	
+    <!-- spawn uploaded object model -->
+
+
+    <!-- spawn uploaded object model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="box5" args="-urdf -param light_object -model box5 -x 3.0 -y 0.0 -z 0.0" respawn="false" output="screen" />
+
+    <!-- spawn uploaded object model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="box7" args="-urdf -param light_object -model box7 -x 0.0 -y -3.0 -z 0.0" respawn="false" output="screen" />
+
+
+
+    <!-- send world urdf to param server -->
+    <param name="heavy_object" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/heavy_object.urdf.xacro" /> 
+
+
+
+    <!-- spawn uploaded object model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="box6" args="-urdf -param heavy_object -model box6 -x 2.0 -y -2.0 -z 0.0" respawn="false" output="screen" />
+
+    <!-- spawn uploaded object model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="box8" args="-urdf -param heavy_object -model box8 -x -2.0 -y -2.0 -z 0.0" respawn="false" output="screen" />
+
+</launch>

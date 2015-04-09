@@ -1,0 +1,4 @@
+<launch>
+  <test time-limit="300" test-name="clear_tests" pkg="clear_costmap_recovery" type="clear_tester" />
+  <rosparam command="load" file="$(find semantic_clear_costmap_recovery)/test/params.yaml" ns="clear_tests"/>
+</launch>

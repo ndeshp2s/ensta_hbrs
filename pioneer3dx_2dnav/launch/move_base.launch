@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-	 <node name="map_server" pkg="map_server" type="map_server" args="/home/niranjan/catkin_ws/src/ensta_hbrs/ensta_environments/maps/world-1.yaml">  
+	 <node name="map_server" pkg="map_server" type="map_server" args="/home/turtlebot/catkin_ws/src/ensta_hbrs/ensta_environments/maps/world-3.yaml">  
   	  <param name="frame_id" type="str" value="/map"  />
 	  </node>
 
@@ -13,8 +13,9 @@
 	  	<!-- start amcl -->
 	<node pkg="amcl" type="amcl" name="amcl">
 		<!--<remap from="scan" to="scan_unified" />-->
+		<!--<remap from="scan" to="p3dx/laser/scan"/>-->
 		<param name="odom_model_type" value="omni"/>
-		<param name="transform_tolerance" value="0.2" />
+		
 		<param name="gui_publish_rate" value="-1.0"/>
 		<param name="laser_max_beams" value="30"/>
 		<param name="laser_max_range" value="29.5"/>
@@ -59,8 +60,8 @@
 	</node>-->
 
 
-        <!--<node pkg="move_base" type="move_base" respawn="false" name="p3dx_move_base" output="screen" clear_params="true">
-        <node pkg="move_base" type="move_base" name="p3dx_move_base" >
+       <!-- <node pkg="move_base" type="move_base" respawn="false" name="p3dx_move_base" output="screen" clear_params="true">
+        
 		<rosparam file="$(find pioneer3dx_2dnav)/config/move_base_params.yaml" command="load"/>
 		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
 		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
@@ -70,15 +71,27 @@
 		<rosparam file="$(find pioneer3dx_2dnav)/config/base_local_planner_params.yaml" command="load" ns="DWAPlannerROS" />
 	</node>-->
 
-	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
-		
+
+
+        <node pkg="laser_filters" type="scan_to_scan_filter_chain" output="screen" name="laser_filter">
+	       
+		<rosparam command="load" file="$(find pioneer3dx_2dnav)/config/laser_filter.yaml" />
+        </node>
+
+	<!--<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true" launch-prefix="xterm -e gdb args"> -->
+        <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+       
     		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
-    		<rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+                <rosparam file="$(find pioneer3dx_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
     		<rosparam file="$(find pioneer3dx_2dnav)/config/local_costmap_params.yaml" command="load" />
     		<rosparam file="$(find pioneer3dx_2dnav)/config/global_costmap_params.yaml" command="load" />
     		<rosparam file="$(find pioneer3dx_2dnav)/config/base_local_planner_params.yaml" command="load" />
+                <rosparam file="$(find pioneer3dx_2dnav)/config/move_base.yaml" command="load"/>
     		
   	</node>
+
+
+
 
 
 </launch>

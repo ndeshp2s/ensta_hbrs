@@ -1,9 +1,0 @@
-<launch>
-
-
-    <node pkg="knowledge_base" type="all_query_server_node.py" name="all_query_server_node" output="screen">
-         <param name="filename" type="string" value="$(find knowledge_base)/data/object_information_all.yaml" />
-    </node> 
-
-
-</launch>

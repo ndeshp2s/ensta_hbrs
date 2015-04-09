@@ -124,7 +124,7 @@
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.53 20.02 2.62" />
+				<box size="0.52 20.02 2.62" />
 			</geometry>
 		</collision>
 	</link>
@@ -147,14 +147,13 @@
 		<visual>
 			<origin xyz="-4 6 0" />
 			<geometry>
-				
 				<box size="1 1 1.5" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="-4 6 0" />
 			<geometry>
-				<box size="0.64 2.01 0.91" />
+				<box size="1.02 1.02 1.52" />
 			</geometry>
 		</collision>
 	</link>
@@ -163,7 +162,7 @@
 	</gazebo>
 
 	<joint name="joint_object_1" type="fixed">
-		<origin xyz="0 0 0.15" rpy="0 0 0" />
+		<origin xyz="0 0 0.45" rpy="0 0 0" />
 		<parent link="dummy_link" />
 		<child link="object_1" />
 	</joint>
@@ -177,22 +176,21 @@
 		</inertial>
 		<visual>
 			<origin xyz="-4 -6 0" />
-			<geometry>
-				
+			<geometry>				
 				<box size="1 1 1.5" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="-4 -6 0" />
 			<geometry>
-				<box size="0.64 2.01 0.91" />
+				<box size="1.02 1.02 1.52" />
 			</geometry>
 		</collision>
 	</link>
 
 
 	<joint name="joint_object_2" type="fixed">
-		<origin xyz="0 0 0.15" rpy="0 0 0" />
+		<origin xyz="0 0 0.45" rpy="0 0 0" />
 		<parent link="dummy_link" />
 		<child link="object_2" />
 	</joint>
@@ -206,22 +204,21 @@
 		</inertial>
 		<visual>
 			<origin xyz="5 0 0" />
-			<geometry>
-				
+			<geometry>				
 				<box size="1 1 1.5" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="5 0 0" />
 			<geometry>
-				<box size="0.64 2.01 0.91" />
+				<box size="1.02 1.02 1.52" />
 			</geometry>
 		</collision>
 	</link>
 
 	
 	<joint name="joint_object_3" type="fixed">
-		<origin xyz="0 0 0.15" rpy="0 0 0" />
+		<origin xyz="0 0 0.45" rpy="0 0 0" />
 		<parent link="dummy_link" />
 		<child link="object_3" />
 	</joint>		

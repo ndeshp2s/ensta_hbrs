@@ -9,6 +9,9 @@ local_costmap:
    height: 4.0
    resolution: 0.1
    transform_tolerance: 0.5
+   plugins: []
+   
+
 
 
     

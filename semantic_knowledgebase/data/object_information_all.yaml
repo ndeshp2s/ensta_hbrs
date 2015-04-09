@@ -1,0 +1,596 @@
+- 
+  instance: 'wall-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 5.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 5.0
+          z: 0.0 
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall' 
+
+- 
+  instance: 'wall-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 395.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 400.0
+          z: 0.0
+        -
+          x: 395.0
+          y: 400.0
+          z: 0.0  
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall' 
+
+- 
+  instance: 'wall-03'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 0.0
+          y: 395.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 395.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 400.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 400.0
+          z: 0.0  
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall' 
+
+- 
+  instance: 'wall-04'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 5.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 5.0
+          y: 400.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 400.0
+          z: 0.0  
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall'
+
+- 
+  instance: 'wall-05'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 0.0
+          y: 237.0
+          z: 0.0
+        -
+          x: 200.0
+          y: 237.0
+          z: 0.0
+        -
+          x: 200.0
+          y: 243.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 243.0
+          z: 0.0  
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall' 
+ 
+- 
+  instance: 'wall-06'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 220.0
+          y: 237.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 237.0
+          z: 0.0
+        -
+          x: 400.0
+          y: 243.0
+          z: 0.0
+        -
+          x: 220.0
+          y: 243.0
+          z: 0.0  
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall' 
+
+- 
+  instance: 'box-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 70.0
+          y: 280.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 280.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 340.0
+          z: 0.0
+        -
+          x: 70.0
+          y: 340.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Box' 
+
+- 
+  instance: 'box-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 105.0
+          y: 70.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 70.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 90.0
+          z: 0.0
+        -
+          x: 105.0
+          y: 90.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-03'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 280.0
+          y: 175.0
+          z: 0.0
+        -
+          x: 340.0
+          y: 175.0
+          z: 0.0
+        -
+          x: 340.0
+          y: 225.0
+          z: 0.0
+        -
+          x: 280.0
+          y: 225.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-04'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 70.0
+          y: 175.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 175.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 225.0
+          z: 0.0
+        -
+          x: 70.0
+          y: 225.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-05'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-08'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 260.0
+          y: 140.0
+          z: 0.0
+        -
+          x: 260.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 220.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 220.0
+          y: 140.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-09'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 280.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 280.0
+          y: 220.0
+          z: 0.0
+        -
+          x: 240.0
+          y: 220.0
+          z: 0.0
+        -
+          x: 240.0
+          y: 180.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-06'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 180.0
+          y: 140.0
+          z: 0.0
+        -
+          x: 180.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 140.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 140.0
+          y: 140.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-07'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 220.0
+          y: 140.0
+          z: 0.0
+        -
+          x: 220.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 180.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 140.0
+          y: 120.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-11'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 130.0
+          y: 130.0
+          z: 0.0
+        -
+          x: 130.0
+          y: 190.0
+          z: 0.0
+        -
+          x: 100.0
+          y: 190.0
+          z: 0.0
+        -
+          x: 100.0
+          y: 130.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'box-10'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 170.0
+          y: 100.0
+          z: 0.0
+        -
+          x: 170.0
+          y: 130.0
+          z: 0.0
+        -
+          x: 140.0
+          y: 130.0
+          z: 0.0
+        -
+          x: 140.0
+          y: 100.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+

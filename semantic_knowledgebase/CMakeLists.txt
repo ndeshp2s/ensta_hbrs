@@ -20,16 +20,9 @@ add_message_files(
    GeometricProperties.msg
    SemanticProperties.msg
    BoundingBox.msg
-
-   
+  
 )
 
-add_service_files(
-   FILES
-   AddTwoInts.srv
-   KBService.srv
-   
- )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -37,7 +30,12 @@ add_service_files(
 #   Action1.action
 #   Action2.action
 # )
-
+add_service_files(
+   FILES
+   AddTwoInts.srv
+   KBService.srv
+   
+ )
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
@@ -49,8 +47,6 @@ add_service_files(
 ## catkin specific configuration ##
 ###################################
 catkin_package(
-    INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME}
     CATKIN_DEPENDS 
       roscpp 
       message_runtime 
@@ -59,20 +55,6 @@ catkin_package(
       std_msgs
 )
 
-include_directories(include
-  ${catkin_INCLUDE_DIRS}
-)
 
-
-#add_executable(add_two_ints_server src/add_two_ints_server.cpp)
-#target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
-#add_dependencies(add_two_ints_server semantic_knowledgebase_gencpp)
-
-#add_executable(add_two_ints_client src/add_two_ints_client.cpp)
-#target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
-#add_dependencies(add_two_ints_client semantic_knowledgebase_gencpp)
-
-add_executable(entity_list_client src/entity_list_client.cpp)
-target_link_libraries(entity_list_client ${catkin_LIBRARIES})
 
 

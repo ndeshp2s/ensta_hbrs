@@ -4,7 +4,7 @@
 <launch>
 	
 	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
-	<remap from="scan" to="p3dx/laser/scan"/>
+	
 	</node>
 
 </launch>

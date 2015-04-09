@@ -1,6 +1,7 @@
 
-string  name
+ObjectInstance  instance
 GeometricProperties geometry
 SemanticProperties semantics
+
 
 
