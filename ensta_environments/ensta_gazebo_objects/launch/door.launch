@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- send door urdf to param server -->
+   <param name="door" textfile="/home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/gazebo_default_objects/gazebo_models/hinged_door/model-1_4.sdf" />
+	
+    <!-- spawn uploaded door model -->
+    <node name="spawn_door" pkg="gazebo_ros" type="spawn_model" args="-sdf -param door  -x 0.0 -y 2.0 -z 0.01 -R 0 -P 0 -Y -1.57 -model door" respawn="false" output="screen" />
+
+    <!-- send world urdf to param server -->
+    <param name="couch" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/couch.urdf.xacro" /> -->
+	
+    <!-- spawn uploaded world model -->
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_couch" args="-urdf -param couch -model couch -x 0.0 -y -7.0 -z 0.1" respawn="false" output="screen" /> 
+
+</launch>
+
+
+

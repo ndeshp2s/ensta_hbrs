@@ -28,7 +28,7 @@ namespace semantic_costmap
      has_updated_data_ = false;
      ros::Rate r(10);
 
-     double inflation_radius = 0.8;
+     double inflation_radius = 1.0;
      double weight = 1.0;
 
      while (!map_received_ && g_nh.ok())

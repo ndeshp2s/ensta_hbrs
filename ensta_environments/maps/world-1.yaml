@@ -1,4 +1,4 @@
-image: /home/turtlebot/catkin_ws/src/ensta_hbrs/ensta_environments/maps/world-1.pgm
+image: /home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/maps/world-1.pgm
 resolution: 0.050000
 origin: [-10.000000, -10.000000, 0.000000]
 negate: 0

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<robot name="room_door">
+  <link name="hinge">
+    <inertial>
+      <origin xyz="0 0 1.125"/> 
+      <mass value="0.5" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 1.125" rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.2" radius="0.05"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="door">
+     <inertial>
+      <origin xyz="0 0.2 1.125"/> 
+      <mass value="5.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.2 1.125" rpy="0 0 1.57" />
+      <geometry>
+        <box size="0.4 .1 2.2"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="door_hinge" type="revolute">
+    <parent link="hinge"/>
+    <child link="door"/>
+    <origin xyz="0 0.225 1.125"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="15.0" lower="-1.57" upper="1.57" velocity="1"/>
+  </joint>
+
+ 
+ <gazebo reference="hinge">
+   <material>Gazebo/Brown</material>
+ </gazebo> 
+
+ <gazebo reference="door">
+   <material>Gazebo/Black</material>
+ </gazebo> 
+
+</robot>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="ipa-kitchen">
+
+  <xacro:include filename="$(find cob_gazebo_worlds)/urdf/common.xacro" />
+  <xacro:include filename="$(find cob_gazebo_worlds)/urdf/materials.urdf.xacro" />
+
+  <xacro:macro name="ipa-kitchen" params="name">
+  
+  <gazebo>
+    <plugin name="environment_gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>world</robotNamespace>
+      <robotParam>/world_description</robotParam>
+    </plugin>
+  </gazebo>
+
+  <!-- world -->
+  <link name="world"/>
+
+  <!-- walls -->
+  <!-- wall_00 -->
+  <link name="wall_00">
+    <xacro:box_inertial x="2.75" y="0.06" z="0.50" mass="5.0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:box_inertial>
+    <visual>
+      <origin xyz="0 0 0" />
+      <geometry>
+        <box size="2.75 0.06 1.0" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" />
+      <geometry>
+        <box size="2.77 0.08 1.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="wall_00">
+    <material>IPA/Wall</material>
+  </gazebo>
+
+  <joint name="joint_wall_00" type="fixed">
+    <origin xyz="-2.156 4.791 0.250" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="wall_00" />
+  </joint>
+
+  </xacro:macro>
+
+  <xacro:ipa-kitchen name="ipa-kitchen" />
+
+</robot>
+

@@ -3,7 +3,7 @@
 
 
 	<!-- Select the world -->
-	<include file="$(find ensta_gazebo_worlds)/launch/world-2.launch" />
+	<include file="$(find ensta_gazebo_worlds)/launch/world-4.launch" />
        
 	<!--<include file="$(find gazebo_ros)/launch/empty_world.launch"/>-->
 	<!-- upload robot description -->

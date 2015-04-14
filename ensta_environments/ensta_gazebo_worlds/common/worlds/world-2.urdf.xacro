@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
+
+
 <robot name="demo-1">
+
 
 	<!-- dummy_link -->
 	<link name="dummy_link">
@@ -188,6 +191,8 @@
 		<parent link="dummy_link" />
 		<child link="center_wall_two" />
 	</joint>
+
+
 
 <!-- Objects -->
 	<!-- object_1 -->
