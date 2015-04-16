@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- send lamp urdf to param server -->
+    <param name="lamp" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/lamp.urdf" /> -->
+	
+    <!-- spawn uploaded object model -->
+    <node name="lamp" pkg="gazebo_ros" type="spawn_model" args="-urdf -param lamp -model lamp -x 0.0 -y -2.0 -z 0.0" respawn="false" output="screen" /> 
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- send stool urdf to param server -->
+    <param name="stool" command="$(find xacro)/xacro.py $(find robocup_worlds)/objects/stool.urdf" /> -->
+	
+    <!-- spawn uploaded stool model -->
+    <node name="stool1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param stool -model stool1 -x 0.5 -y -1.75 -z 0.0" respawn="false" output="screen" /> 
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- send stool urdf to param server -->
+    <param name="box_wicker" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/box_wicker.urdf" /> 
+
+    <!-- spawn uploaded stool model -->
+    <node name="gazebo_world_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param box_wicker -model box_wicker -x -1.0 -y -1.5 -z 0.15" respawn="false" output="screen" /> 
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- send table urdf to param server -->
+    <param name="table2" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/table.urdf" />
+	
+    <!-- spawn uploaded table model -->
+    <node name="spawn_table" pkg="gazebo_ros" type="spawn_model" args="-urdf -param table  -x 1.0 -y -3.5 -z 0.27 -R 0 -P 0 -Y 1.57 -model table2" respawn="false" output="screen" />
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- send cabinet urdf to param server -->
+    <param name="cabinet2" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/cabinet_ikea_galant.urdf" />
+	
+    <!-- spawn uploaded cabinet model -->
+    <node name="spawn_cabinet" pkg="gazebo_ros" type="spawn_model" args="-urdf -param cabinet  -x -1 -y -3.25 -z 0 -R 0 -P 0 -Y 1.57 -model cabinet2" respawn="false" output="screen" />
+
+
+
+
+
+
+
+
+
+</launch>

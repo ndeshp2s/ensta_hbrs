@@ -1,0 +1,9 @@
+<launch>
+
+
+    <node pkg="semantic_knowledgebase" type="all_query_server_node.py" name="all_query_server_node" output="screen">
+         <param name="filename" type="string" value="$(find semantic_knowledgebase)/data/scenario_1.yaml" />
+    </node> 
+
+
+</launch>

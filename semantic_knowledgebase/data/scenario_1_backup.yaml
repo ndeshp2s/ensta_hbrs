@@ -1,0 +1,422 @@
+- 
+  instance: 'wall-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 4.0
+          y: 0.0
+          z: 0.0
+        -
+          x: 4.0
+          y: 280.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 280.0
+          z: 0.0
+        -
+          x: 0.0
+          y: 0.0
+          z: 0.0 
+  semantics: 
+    category: 'structural_object' 
+    sub_category: 'Wall'
+
+- 
+  instance: 'couch-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 254.0
+          y: 80.0
+          z: 0.0
+        -
+          x: 254.0
+          y: 120.0
+          z: 0.0
+        -
+          x: 232.0
+          y: 120.0
+          z: 0.0
+        -
+          x: 232.0
+          y: 80.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Couch' 
+
+- 
+  instance: 'couch-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 230.0
+          y: 54.0
+          z: 0.0
+        -
+          x: 230.0
+          y: 76.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 76.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 54.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Couch'
+
+- 
+  instance: 'table-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 250.0
+          y: 58.0
+          z: 0.0
+        -
+          x: 250.0
+          y: 78.0
+          z: 0.0
+        -
+          x: 230.0
+          y: 78.0
+          z: 0.0
+        -
+          x: 230.0
+          y: 58.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Table'
+
+- 
+  instance: 'table-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 222.0
+          y: 124.0
+          z: 0.0
+        -
+          x: 222.0
+          y: 138.0
+          z: 0.0
+        -
+          x: 198.0
+          y: 138.0
+          z: 0.0
+        -
+          x: 198.0
+          y: 124.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Table'
+
+- 
+  instance: 'cabinet-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 228.0
+          y: 168.0
+          z: 0.0
+        -
+          x: 228.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 180.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 168.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Cabinet'
+
+- 
+  instance: 'chair-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 188.0
+          y: 90.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 105.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 105.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 90.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Chair'
+
+- 
+  instance: 'lamp-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 146.0
+          y: 92.0
+          z: 0.0
+        -
+          x: 146.0
+          y: 103.0
+          z: 0.0
+        -
+          x: 134.0
+          y: 103.0
+          z: 0.0
+        -
+          x: 134.0
+          y: 92.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Lamp'
+
+- 
+  instance: 'stool-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 160.0
+          y: 100.0
+          z: 0.0
+        -
+          x: 160.0
+          y: 112.0
+          z: 0.0
+        -
+          x: 150.0
+          y: 112.0
+          z: 0.0
+        -
+          x: 150.0
+          y: 100.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Stool'
+
+- 
+  instance: 'box_wicker-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 128.0
+          y: 100.0
+          z: 0.0
+        -
+          x: 128.0
+          y: 116.0
+          z: 0.0
+        -
+          x: 116.0
+          y: 116.0
+          z: 0.0
+        -
+          x: 116.0
+          y: 100.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'table-03'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 90.0
+          y: 58.0
+          z: 0.0
+        -
+          x: 90.0
+          y: 78.0
+          z: 0.0
+        -
+          x: 70.0
+          y: 78.0
+          z: 0.0
+        -
+          x: 70.0
+          y: 58.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Table'
+
+- 
+  instance: 'cabinet-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 124.0
+          y: 92.0
+          z: 0.0
+        -
+          x: 124.0
+          y: 106.0
+          z: 0.0
+        -
+          x: 110.0
+          y: 106.0
+          z: 0.0
+        -
+          x: 110.0
+          y: 92.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Cabinet'
+
+
+

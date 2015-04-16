@@ -201,26 +201,213 @@
 		<visual>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.1 8.0 1.1" />
+				<box size="2.85 0.1 1.1" />
 			</geometry>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" />
 			<geometry>
-				<box size="0.1 8.0 1.1" />
+				<box size="2.85 0.1 1.1" />
 			</geometry>
 		</collision>
 	</link>
 	
 	<joint name="joint_center_wall_three" type="fixed">
-		<origin xyz="-1.5 -3 0" rpy="0 0 0" />
+		<origin xyz="-5.5 -1 1" rpy="0 0 0" />
 		<parent link="dummy_link" />
 		<child link="center_wall_three" />
 	</joint>
-  
+
+        <!-- center_wall_four -->
+	<link name="center_wall_four">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="1.35 0.1 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="1.35 0.1 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_four" type="fixed">
+		<origin xyz="-2.35 -1 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_four" />
+	</joint>
 
 
+        <!-- center_wall_five -->
+	<link name="center_wall_five">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="2.85 0.1 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="2.85 0.1 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_five" type="fixed">
+		<origin xyz="-5.5 -4 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_five" />
+	</joint>
 
+        <!-- center_wall_six -->
+	<link name="center_wall_six">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="1.50 0.1 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="1.50 0.1 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_six" type="fixed">
+		<origin xyz="-2.35 -4 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_six" />
+	</joint>
+
+       
+        <!-- center_wall_seven -->
+	<link name="center_wall_seven">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 1.0 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 1.0 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_seven" type="fixed">
+		<origin xyz="-1.65 1.5 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_seven" />
+	</joint>
+
+        <!-- center_wall_eight -->
+	<link name="center_wall_eight">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 2.0 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 2.0 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_eight" type="fixed">
+		<origin xyz="-1.65 -1.0 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_eight" />
+	</joint>
+
+        <!-- center_wall_nine -->
+	<link name="center_wall_nine">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 2.0 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 2.0 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_nine" type="fixed">
+		<origin xyz="-1.65 -4.0 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_nine" />
+	</joint>
+
+        <!-- center_wall_ten -->
+	<link name="center_wall_ten">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 1.0 1.1" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.1 1.0 1.1" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_ten" type="fixed">
+		<origin xyz="-1.65 -6.5 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_ten" />
+	</joint>
 
  <gazebo reference="north_wall">
 	<material>IPA/Wall2</material>
@@ -241,17 +428,51 @@
  </gazebo>
 
  <gazebo reference="center_wall_one">
-	<material>IPA/Wall</material>
+	<material>IPA/Wall2</material>
 	<selfCollide>false</selfCollide>
  </gazebo>
  <gazebo reference="center_wall_two">
-	<material>IPA/Wall</material>
+	<material>IPA/Wall2</material>
 	<selfCollide>false</selfCollide>
  </gazebo>
  <gazebo reference="center_wall_three">
-	<material>IPA/Wall</material>
+	<material>IPA/Wall2</material>
 	<selfCollide>false</selfCollide>
  </gazebo>
+ <gazebo reference="center_wall_four">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_five">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_six">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_seven">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+
+ <gazebo reference="center_wall_eight">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+
+ <gazebo reference="center_wall_nine">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_ten">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+
+
+
+
 
 
 </robot>

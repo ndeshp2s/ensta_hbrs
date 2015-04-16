@@ -54,14 +54,14 @@
    <param name="tv" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/tv_samsung.urdf" />
 	
     <!-- spawn uploaded table_tv model -->
-    <node name="spawn_tv" pkg="gazebo_ros" type="spawn_model" args="-urdf -param tv  -x 3.5 -y -3.5 -z 0.58 -R 0 -P 0 -Y 3.14 -model tv" respawn="false" output="screen" />
+    <node name="spawn_tv" pkg="gazebo_ros" type="spawn_model" args="-urdf -param tv  -x 3.5 -y -3.5 -z 0.58 -R 0 -P 0 -Y 0 -model tv" respawn="false" output="screen" />
 
 
    <!-- send table_tv urdf to param server -->
    <param name="cabinet1" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/cabinet_ikea_galant.urdf" />
 	
     <!-- spawn uploaded table_tv model -->
-    <node name="spawn_cabinet1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param cabinet1  -x 3.5 -y 1.7 -z 0 -R 0 -P 0 -Y 0 -model cabinet1" respawn="false" output="screen" />
+    <node name="spawn_cabinet1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param cabinet1  -x 3.5 -y 1.7 -z 0 -R 0 -P 0 -Y 3.14 -model cabinet1" respawn="false" output="screen" />
 
 
    <!-- send corrogated_box urdf to param server -->

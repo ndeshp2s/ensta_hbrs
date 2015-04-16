@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-	 <node name="map_server" pkg="map_server" type="map_server" args="/home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/maps/world-3.yaml">  
+	 <node name="map_server" pkg="map_server" type="map_server" args="/home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/maps/scenario_1.yaml">  
   	  <param name="frame_id" type="str" value="/map"  />
 	  </node>
 

@@ -1,3 +1,4 @@
+<?xml version="1.0" ?> 
 <robot name="stool">
   <link name="stool">
 
@@ -12,7 +13,7 @@
       <!-- visual origin is defined w.r.t. link local coordinate system -->
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robocup_worlds/Media/models/stool.stl" scale="1 1 1"/>
+        <mesh filename="ensta_gazebo_objects/Media/models//stool.stl" scale="1 1 1"/>
       </geometry>
     </visual>
 
@@ -20,15 +21,15 @@
       <!-- collision origin is defined w.r.t. link local coordinate system -->
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robocup_worlds/Media/models/stool.stl" scale="1 1 1"/>
+        <box size="0.48 0.570 0.290" />
       </geometry>
     </collision>
 
   </link>
 
   <gazebo reference="stool">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>true</turnGravityOff>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>B</turnGravityOff>
   </gazebo>
 
   <gazebo>
