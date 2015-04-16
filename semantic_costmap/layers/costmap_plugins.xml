@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+
+ <class_libraries>
+      <library path="lib/libobject_layer">
+        <class type="semantic_costmap::ObjectLayer" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/libstructural_layer">
+        <class type="semantic_costmap::StructuralLayer" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/libstructural_objects_layer">
+        <class type="semantic_costmap::StructuralObjectsLayer" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/libheavy_objects_layer">
+        <class type="semantic_costmap::HeavyObjectsLayer" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/liblight_objects_layer">
+        <class type="semantic_costmap::LightObjectsLayer" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/libstatic_objects">
+        <class type="semantic_costmap::StaticObjects" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+      
+      <library path="lib/libdynamic_objects">
+        <class type="semantic_costmap::DynamicObjects" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      <library path="lib/libinflate_objects">
+        <class type="semantic_costmap::InflateObjects" base_class_type="costmap_2d::Layer">
+          <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+        </class>
+      </library>
+
+      
+ </class_libraries> 
+
+ 
+
+

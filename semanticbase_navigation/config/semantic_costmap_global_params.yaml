@@ -1,0 +1,3 @@
+semantic_costmap_global:
+ global_frame: /map
+ inflation_radius: 0.46

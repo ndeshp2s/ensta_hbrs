@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+<name>semantic_knowledge_base</name>
+<version>0.1.0</version>
+<description>ROS metapackage for semantic knowledge base.</description>
+<license>GPLv3</license>
+<author email="niranjan.deshpande187@gmail.com">Niranjan Deshpande</author>
+<maintainer email="niranjan.deshpande187@gmail.com">Niranjan Deshpande</maintainer>
+<buildtool_depend>catkin</buildtool_depend>
+<export>
+<metapackage/>
+</export>
+</package>

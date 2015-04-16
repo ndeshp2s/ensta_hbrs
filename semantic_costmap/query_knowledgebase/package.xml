@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <!-- Package Metadata -->
+  <name>query_knowledgebase</name>
+  <version>0.1.0</version>
+  <description>The query_knowledgebase package</description>
+  <maintainer email="niranjan.deshpande187@gmail.com">niranjan</maintainer>
+  <license>GPLv3</license>
+
+  <!-- Required by Catkin -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Package Dependencies -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>semantic_knowledgebase</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>semantic_knowledgebase</run_depend>
+  
+  <!--<export>
+   
+  </export> -->
+</package>

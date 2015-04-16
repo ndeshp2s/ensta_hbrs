@@ -1,0 +1,7 @@
+   plugins:
+    -
+     name: layer_simple
+     type: "simple_layer_namespace::SimpleLayer"
+    -
+     name: layer_grid
+     type: "simple_layer_namespace::GridLayer"

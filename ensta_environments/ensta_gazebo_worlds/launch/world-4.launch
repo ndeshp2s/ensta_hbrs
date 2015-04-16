@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="world_name" default="worlds/empty.world" />
+    <arg name="debug" default="false" />
+    <arg name="headless" default="false" />
+    <arg name="paused" default="false" />
+    <arg name="use_sim_time" default="true" />
+    <arg name="gui" default="true" />
+
+    <!-- start gazebo with empty world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <!--arg name="world_name" value="$(arg world_name)" /-->
+        <arg name="debug" value="$(arg debug)" />
+        <arg name="headless" value="$(arg headless)" />
+        <arg name="paused" value="$(arg paused)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="gui" value="$(arg gui)" />
+    </include>
+
+    <!-- send wall urdf to param server -->
+   <param name="wall" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/walls.urdf.xacro" />
+	
+    <!-- spawn uploaded wall model -->
+    <node name="spawn_wall" pkg="gazebo_ros" type="spawn_model" args="-sdf -param wall  -x 0.0 -y 0.0 -z 0.0 -R 0 -P 0 -Y 0 -model wall" respawn="false" output="screen" />
+
+
+  
+   <!-- send door urdf to param server -->
+   <param name="door" textfile="/home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/gazebo_default_objects/gazebo_models/hinged_door/model-1_4.sdf" />
+	
+    <!-- spawn uploaded door model -->
+    <node name="spawn_door" pkg="gazebo_ros" type="spawn_model" args="-sdf -param door  -x 1.95 -y 2.0 -z 0.01 -R 0 -P 0 -Y 1.57 -model door" respawn="false" output="screen" />
+
+
+
+   <!-- send couch urdf to param server -->
+   <param name="couch" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/couch.urdf.xacro" />
+	
+    <!-- spawn uploaded couch model -->
+    <node name="spawn_couch1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param couch  -x 5 -y -2.0 -z 0.01 -R 0 -P 0 -Y -1.57 -model couch1" respawn="false" output="screen" />
+
+    <!-- spawn uploaded couch model -->
+    <node name="spawn_couch2" pkg="gazebo_ros" type="spawn_model" args="-urdf -param couch  -x 3.5 -y -0.5 -z 0.01 -R 0 -P 0 -Y 0 -model couch2" respawn="false" output="screen" />
+
+
+   <!-- send table_tv urdf to param server -->
+   <param name="table_tv" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/table_tv.urdf" />
+	
+    <!-- spawn uploaded table_tv model -->
+    <node name="spawn_table_tv" pkg="gazebo_ros" type="spawn_model" args="-urdf -param table_tv  -x 3.5 -y -3.5 -z 0.01 -R 0 -P 0 -Y 0 -model table_tv" respawn="false" output="screen" />
+
+   <!-- send table_tv urdf to param server -->
+   <param name="tv" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/tv_samsung.urdf" />
+	
+    <!-- spawn uploaded table_tv model -->
+    <node name="spawn_tv" pkg="gazebo_ros" type="spawn_model" args="-urdf -param tv  -x 3.5 -y -3.5 -z 0.58 -R 0 -P 0 -Y 3.14 -model tv" respawn="false" output="screen" />
+
+
+   <!-- send table_tv urdf to param server -->
+   <param name="cabinet1" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/cabinet_ikea_galant.urdf" />
+	
+    <!-- spawn uploaded table_tv model -->
+    <node name="spawn_cabinet1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param cabinet1  -x 3.5 -y 1.7 -z 0 -R 0 -P 0 -Y 0 -model cabinet1" respawn="false" output="screen" />
+
+
+   <!-- send corrogated_box urdf to param server -->
+   <param name="corrogated_box" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/corrogated_box.urdf" />
+	
+    <!-- spawn uploaded corrogated_box model -->
+    <node name="spawn_corrogated_box" pkg="gazebo_ros" type="spawn_model" args="-urdf -param corrogated_box  -x 4.7 -y -3.4 -z 0.5 -R 3.14 -P 0 -Y 0 -model corrogated_box" respawn="false" output="screen" />
+
+
+   <!-- send corrogated_box urdf to param server -->
+   <param name="stool" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/box_wood.urdf" />
+	
+    <!-- spawn uploaded corrogated_box model -->
+    <node name="spawn_stool1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param stool  -x 2.2 -y -1.25 -z 0.2 -R 0 -P 0 -Y 0 -model stool1" respawn="false" output="screen" />
+    <!-- spawn uploaded corrogated_box model -->
+    <node name="spawn_stool2" pkg="gazebo_ros" type="spawn_model" args="-urdf -param stool  -x 2.2 -y -2.75 -z 0.2 -R 0 -P 0 -Y 0 -model stool2" respawn="false" output="screen" />
+
+
+   <!-- send corrogated_box urdf to param server -->
+   <param name="table" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/table.urdf" />
+	
+    <!-- spawn uploaded corrogated_box model -->
+    <node name="spawn_table1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param table  -x 5 -y -0.5 -z 0.27 -R 0 -P 0 -Y 0 -model table1" respawn="false" output="screen" />
+
+
+
+
+
+
+
+
+
+
+</launch>

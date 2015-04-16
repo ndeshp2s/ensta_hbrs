@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="semantic_navigation_coordinator" type="semantic_navigation_coordinator_node" respawn="true" name="semantic_navigation_coordinator" output="screen">
+		<rosparam file="$(find semanticbase_navigation)/config/semantic_costmap_global_params.yaml" command="load" />
+ 		
+		<param name="base_global_planner" value="semantic_planner_global/SemanticPlannerGlobal"/>
+	</node>
+
+</launch>

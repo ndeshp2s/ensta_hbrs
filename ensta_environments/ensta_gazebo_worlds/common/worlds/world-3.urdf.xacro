@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+
+
+
+<robot name="demo-1">
+
+
+	<!-- dummy_link -->
+	<link name="dummy_link">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.00 0.00 0.00" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.00 0.00 0.00" />
+			</geometry>
+		</collision>
+	</link>
+
+
+<!-- walls -->
+
+	<!-- north_wall -->
+	<link name="north_wall">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="14 0.01 1.5" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="14.02 0.03 1.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_north_wall" type="fixed">
+		<origin xyz="0 10 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="north_wall" />
+	</joint>
+
+	<!-- east_wall -->
+	<link name="east_wall">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.01 20 2.60" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.03 20.02 2.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_east_wall" type="fixed">
+		<origin xyz="10 0 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="east_wall" />
+	</joint>
+
+	<!-- south_wall -->
+	<link name="south_wall">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="20 0.01 2.60" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="20.2 0.03 2.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_south_wall" type="fixed">
+		<origin xyz="0 -10 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="south_wall" />
+	</joint>
+	
+
+	<!-- west_wall -->
+	<link name="west_wall">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.01 20 2.60" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="0.03 20.02 2.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_west_wall" type="fixed">
+		<origin xyz="-10 0 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="west_wall" />
+	</joint>
+
+        <!-- center_wall_one -->
+	<link name="center_wall_one">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="10 0.01 2.60" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="10.02 0.03 2.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_one" type="fixed">
+		<origin xyz="-5 2 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_one" />
+	</joint>
+       
+        <!-- center_wall_two -->
+	<link name="center_wall_two">
+		<inertial>
+			<origin xyz="0 0 0" />
+			<mass value="5.0" />
+			<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="9 0.01 2.60" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" />
+			<geometry>
+				<box size="9.02 0.03 2.62" />
+			</geometry>
+		</collision>
+	</link>
+	
+	<joint name="joint_center_wall_two" type="fixed">
+		<origin xyz="5.5 2 1" rpy="0 0 0" />
+		<parent link="dummy_link" />
+		<child link="center_wall_two" />
+	</joint>
+
+	
+
+
+
+ <gazebo reference="north_wall">
+	<material>IPA/Wall2</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="south_wall">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="east_wall">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="west_wall">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_one">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+ <gazebo reference="center_wall_two">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+ </gazebo>
+
+ 
+
+</robot>
