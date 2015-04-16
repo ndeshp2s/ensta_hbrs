@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cob_simulation")
+set(cob_simulation_MAINTAINER "Florian Weisshardt <fmw@ipa.fhg.de>, Nadia Hammoudeh Garcia <nhg@ipa.fhg.de>")
+set(cob_simulation_DEPRECATED "")
+set(cob_simulation_VERSION "0.6.2")
+set(cob_simulation_BUILD_DEPENDS )
+set(cob_simulation_RUN_DEPENDS "cob_gazebo" "cob_bringup_sim" "cob_gazebo_objects" "cob_gazebo_worlds")
+set(cob_simulation_BUILDTOOL_DEPENDS "catkin")

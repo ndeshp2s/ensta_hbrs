@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: semantic_planner_global
+Description: Description of semantic_planner_global
+Version: 0.0.0
+Cflags: -I/home/brsu/catkin_ws/src/ensta_hbrs/semantic_navigation/semantic_planner/semantic_planner_global/include
+Libs: -L/home/brsu/catkin_ws/devel/lib -lsemantic_planner_global
+Requires: 

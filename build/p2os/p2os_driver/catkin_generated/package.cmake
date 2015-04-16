@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "p2os_driver")
+set(p2os_driver_MAINTAINER "Hunter Allen <hunter.allen@vanderbilt.edu>")
+set(p2os_driver_DEPRECATED "")
+set(p2os_driver_VERSION "1.0.12")
+set(p2os_driver_BUILD_DEPENDS "std_msgs" "p2os_msgs" "geometry_msgs" "tf" "roscpp" "nav_msgs" "diagnostic_updater")
+set(p2os_driver_RUN_DEPENDS "diagnostic_updater" "p2os_msgs" "nav_msgs" "tf" "roscpp" "geometry_msgs" "std_msgs")
+set(p2os_driver_BUILDTOOL_DEPENDS "catkin")

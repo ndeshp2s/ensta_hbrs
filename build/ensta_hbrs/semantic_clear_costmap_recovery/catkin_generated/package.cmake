@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_clear_costmap_recovery")
+set(semantic_clear_costmap_recovery_MAINTAINER "turtlebot <turtlebot@todo.todo>")
+set(semantic_clear_costmap_recovery_DEPRECATED "")
+set(semantic_clear_costmap_recovery_VERSION "0.0.0")
+set(semantic_clear_costmap_recovery_BUILD_DEPENDS "cmake_modules" "roscpp" "tf" "costmap_2d" "nav_core" "pluginlib" "eigen" "visualization_msgs")
+set(semantic_clear_costmap_recovery_RUN_DEPENDS "roscpp" "tf" "costmap_2d" "nav_core" "pluginlib" "eigen" "visualization_msgs")
+set(semantic_clear_costmap_recovery_BUILDTOOL_DEPENDS "catkin")

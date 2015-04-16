@@ -1,0 +1,6 @@
+set(semantic_knowledgebase_SETUP_PY_VERSION "0.0.0")
+set(semantic_knowledgebase_SETUP_PY_SCRIPTS "")
+set(semantic_knowledgebase_SETUP_PY_PACKAGES "semantic_knowledgebase")
+set(semantic_knowledgebase_SETUP_PY_PACKAGE_DIRS "src/semantic_knowledgebase")
+set(semantic_knowledgebase_SETUP_PY_MODULES "")
+set(semantic_knowledgebase_SETUP_PY_MODULE_DIRS "")

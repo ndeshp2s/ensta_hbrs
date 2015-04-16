@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cob_gazebo")
+set(cob_gazebo_MAINTAINER "Nadia Hammoudeh Garcia <nhg@ipa.fhg.de>")
+set(cob_gazebo_DEPRECATED "")
+set(cob_gazebo_VERSION "0.6.2")
+set(cob_gazebo_BUILD_DEPENDS )
+set(cob_gazebo_RUN_DEPENDS "gazebo_ros" "gazebo_plugins" "gazebo_ros_control" "cob_gazebo_ros_control" "cob_hardware_config" "cob_controller_configuration_gazebo" "rospy" "rostest" "cob_script_server" "trajectory_msgs" "control_msgs")
+set(cob_gazebo_BUILDTOOL_DEPENDS "catkin")

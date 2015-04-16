@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: p2os_driver
+Description: Description of p2os_driver
+Version: 1.0.12
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: p2os_msgs nav_msgs roscpp geometry_msgs diagnostic_updater tf std_msgs

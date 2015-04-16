@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_knowledge_base")
+set(semantic_knowledge_base_MAINTAINER "Niranjan Deshpande <niranjan.deshpande187@gmail.com>")
+set(semantic_knowledge_base_DEPRECATED "")
+set(semantic_knowledge_base_VERSION "0.1.0")
+set(semantic_knowledge_base_BUILD_DEPENDS )
+set(semantic_knowledge_base_RUN_DEPENDS )
+set(semantic_knowledge_base_BUILDTOOL_DEPENDS "catkin")

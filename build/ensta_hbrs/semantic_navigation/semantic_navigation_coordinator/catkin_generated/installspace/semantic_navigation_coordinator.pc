@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: semantic_navigation_coordinator
+Description: Description of semantic_navigation_coordinator
+Version: 0.1.0
+Cflags: -I/home/brsu/catkin_ws/install/include
+Libs: -L/home/brsu/catkin_ws/install/lib -lsemantic_navigation_coordinator
+Requires: 

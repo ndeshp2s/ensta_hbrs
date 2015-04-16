@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: semanticbase_navigation
+Description: Description of semanticbase_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: p2os_teleop
+Description: Description of p2os_teleop
+Version: 1.0.12
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib -llib
+Requires: geometry_msgs sensor_msgs tf std_msgs

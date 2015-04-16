@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: p2os_launch
+Description: Description of p2os_launch
+Version: 1.0.12
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: 

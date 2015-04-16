@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: query_knowledgebase
+Description: Description of query_knowledgebase
+Version: 0.1.0
+Cflags: -I/home/brsu/catkin_ws/install/include
+Libs: -L/home/brsu/catkin_ws/install/lib -lquery_knowledgebase
+Requires: semantic_knowledgebase roscpp

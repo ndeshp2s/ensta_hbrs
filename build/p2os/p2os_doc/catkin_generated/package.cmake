@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "p2os_doc")
+set(p2os_doc_MAINTAINER "Hunter Allen <hunter.allen@vanderbilt.edu>")
+set(p2os_doc_DEPRECATED "")
+set(p2os_doc_VERSION "1.0.12")
+set(p2os_doc_BUILD_DEPENDS )
+set(p2os_doc_RUN_DEPENDS )
+set(p2os_doc_BUILDTOOL_DEPENDS "catkin")

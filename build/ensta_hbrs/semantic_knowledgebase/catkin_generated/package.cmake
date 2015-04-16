@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_knowledgebase")
+set(semantic_knowledgebase_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(semantic_knowledgebase_DEPRECATED "")
+set(semantic_knowledgebase_VERSION "0.0.0")
+set(semantic_knowledgebase_BUILD_DEPENDS "geometry_msgs" "message_generation" "roscpp" "rospy" "std_msgs" "yocs_msgs")
+set(semantic_knowledgebase_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs" "geometry_msgs" "yocs_msgs" "rospy_message_converter")
+set(semantic_knowledgebase_BUILDTOOL_DEPENDS "catkin")

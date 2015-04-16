@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: pioneer3dx_apps
+Description: Description of pioneer3dx_apps
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: 

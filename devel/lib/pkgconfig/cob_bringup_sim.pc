@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: cob_bringup_sim
+Description: Description of cob_bringup_sim
+Version: 0.6.2
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: gazebo_ros cob_gazebo cob_gazebo_worlds cob_default_robot_config cob_default_env_config

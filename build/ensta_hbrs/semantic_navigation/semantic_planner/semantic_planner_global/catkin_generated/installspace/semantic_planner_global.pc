@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: semantic_planner_global
+Description: Description of semantic_planner_global
+Version: 0.0.0
+Cflags: -I/home/brsu/catkin_ws/install/include
+Libs: -L/home/brsu/catkin_ws/install/lib -lsemantic_planner_global
+Requires: 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "query_knowledgebase")
+set(query_knowledgebase_MAINTAINER "niranjan <niranjan.deshpande187@gmail.com>")
+set(query_knowledgebase_DEPRECATED "")
+set(query_knowledgebase_VERSION "0.1.0")
+set(query_knowledgebase_BUILD_DEPENDS "roscpp" "semantic_knowledgebase")
+set(query_knowledgebase_RUN_DEPENDS "roscpp" "semantic_knowledgebase")
+set(query_knowledgebase_BUILDTOOL_DEPENDS "catkin")

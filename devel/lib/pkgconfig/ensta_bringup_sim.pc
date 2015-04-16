@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: ensta_bringup_sim
+Description: Description of ensta_bringup_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: 

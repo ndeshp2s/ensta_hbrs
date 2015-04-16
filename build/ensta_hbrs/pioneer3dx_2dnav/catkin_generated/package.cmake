@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pioneer3dx_2dnav")
+set(pioneer3dx_2dnav_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(pioneer3dx_2dnav_DEPRECATED "")
+set(pioneer3dx_2dnav_VERSION "0.0.0")
+set(pioneer3dx_2dnav_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(pioneer3dx_2dnav_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(pioneer3dx_2dnav_BUILDTOOL_DEPENDS "catkin")

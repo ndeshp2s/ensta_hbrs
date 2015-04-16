@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: cob_gazebo
+Description: Description of cob_gazebo
+Version: 0.6.2
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/install/lib 
+Requires: gazebo_ros gazebo_plugins cob_hardware_config cob_controller_configuration_gazebo rospy rostest cob_script_server trajectory_msgs control_msgs

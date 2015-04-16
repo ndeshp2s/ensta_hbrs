@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: ensta_gazebo_worlds
+Description: Description of ensta_gazebo_worlds
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/install/lib 
+Requires: 

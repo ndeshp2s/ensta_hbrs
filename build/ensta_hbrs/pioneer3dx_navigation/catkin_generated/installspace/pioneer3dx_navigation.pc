@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: pioneer3dx_navigation
+Description: Description of pioneer3dx_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: query_knowledgebase
+Description: Description of query_knowledgebase
+Version: 0.1.0
+Cflags: -I/home/brsu/catkin_ws/src/ensta_hbrs/semantic_costmap/query_knowledgebase/include
+Libs: -L/home/brsu/catkin_ws/devel/lib -lquery_knowledgebase
+Requires: semantic_knowledgebase roscpp

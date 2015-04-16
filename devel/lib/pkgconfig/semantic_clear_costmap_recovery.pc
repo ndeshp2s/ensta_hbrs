@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: semantic_clear_costmap_recovery
+Description: Description of semantic_clear_costmap_recovery
+Version: 0.0.0
+Cflags: -I/home/brsu/catkin_ws/src/ensta_hbrs/semantic_clear_costmap_recovery/include
+Libs: -L/home/brsu/catkin_ws/devel/lib -lclear_costmap_recovery
+Requires: costmap_2d nav_core pluginlib roscpp tf

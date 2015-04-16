@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "yocs_msgs")
+set(yocs_msgs_MAINTAINER "Jihoon Lee <jihoonl@yujinrobot.com>")
+set(yocs_msgs_DEPRECATED "")
+set(yocs_msgs_VERSION "0.6.2")
+set(yocs_msgs_BUILD_DEPENDS "actionlib_msgs" "std_msgs" "std_srvs" "geometry_msgs" "message_generation")
+set(yocs_msgs_RUN_DEPENDS "actionlib_msgs" "std_msgs" "std_srvs" "geometry_msgs" "message_runtime")
+set(yocs_msgs_BUILDTOOL_DEPENDS "catkin")

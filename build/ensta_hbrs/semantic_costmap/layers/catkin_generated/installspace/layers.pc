@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: layers
+Description: Description of layers
+Version: 0.0.0
+Cflags: -I/home/brsu/catkin_ws/install/include
+Libs: -L/home/brsu/catkin_ws/install/lib 
+Requires: costmap_2d dynamic_reconfigure roscpp geometry_msgs laser_geometry map_msgs message_runtime nav_msgs roscpp sensor_msgs std_msgs tf message_filters semantic_knowledgebase

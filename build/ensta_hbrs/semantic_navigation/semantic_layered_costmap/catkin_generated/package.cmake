@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_layered_costmap")
+set(semantic_layered_costmap_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(semantic_layered_costmap_DEPRECATED "")
+set(semantic_layered_costmap_VERSION "0.0.0")
+set(semantic_layered_costmap_BUILD_DEPENDS "costmap_2d" "pluginlib" "roscpp")
+set(semantic_layered_costmap_RUN_DEPENDS "costmap_2d" "pluginlib" "roscpp")
+set(semantic_layered_costmap_BUILDTOOL_DEPENDS "catkin")

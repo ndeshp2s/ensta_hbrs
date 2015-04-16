@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_planner_global")
+set(semantic_planner_global_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(semantic_planner_global_DEPRECATED "")
+set(semantic_planner_global_VERSION "0.0.0")
+set(semantic_planner_global_BUILD_DEPENDS "base_local_planner" "costmap_2d" "eigen" "nav_core" "pluginlib" "roscpp" "semantic_costmap_global" "tf")
+set(semantic_planner_global_RUN_DEPENDS "base_local_planner" "costmap_2d" "eigen" "nav_core" "pluginlib" "roscpp" "semantic_costmap_global" "tf")
+set(semantic_planner_global_BUILDTOOL_DEPENDS "catkin")

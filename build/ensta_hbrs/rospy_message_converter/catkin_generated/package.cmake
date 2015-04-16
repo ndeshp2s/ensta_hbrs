@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rospy_message_converter")
+set(rospy_message_converter_MAINTAINER "Brandon Alexander <baalexander@gmail.com>")
+set(rospy_message_converter_DEPRECATED "")
+set(rospy_message_converter_VERSION "0.2.0")
+set(rospy_message_converter_BUILD_DEPENDS "message_generation" "std_msgs" "rostest")
+set(rospy_message_converter_RUN_DEPENDS "roslib" "rospy" "message_runtime" "std_msgs")
+set(rospy_message_converter_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_costmap")
+set(semantic_costmap_MAINTAINER "Niranjan Deshpande <niranjan.deshpande187@gmail.com>")
+set(semantic_costmap_DEPRECATED "")
+set(semantic_costmap_VERSION "0.1.0")
+set(semantic_costmap_BUILD_DEPENDS )
+set(semantic_costmap_RUN_DEPENDS )
+set(semantic_costmap_BUILDTOOL_DEPENDS "catkin")

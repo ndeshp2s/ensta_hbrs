@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pioneer3dx_teleop")
+set(pioneer3dx_teleop_MAINTAINER "Niranjan Deshpande <niranjan.deshpande187@gmail.com>")
+set(pioneer3dx_teleop_DEPRECATED "")
+set(pioneer3dx_teleop_VERSION "0.0.1")
+set(pioneer3dx_teleop_BUILD_DEPENDS "sensor_msgs" "tf" "std_msgs" "geometry_msgs")
+set(pioneer3dx_teleop_RUN_DEPENDS "sensor_msgs" "geometry_msgs" "tf" "std_msgs")
+set(pioneer3dx_teleop_BUILDTOOL_DEPENDS "catkin")

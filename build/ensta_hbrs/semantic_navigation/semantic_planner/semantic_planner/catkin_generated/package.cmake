@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_planner")
+set(semantic_planner_MAINTAINER "Niranjan Deshpande <niranjan.deshpande187@gmail.com>")
+set(semantic_planner_DEPRECATED "")
+set(semantic_planner_VERSION "0.1.0")
+set(semantic_planner_BUILD_DEPENDS )
+set(semantic_planner_RUN_DEPENDS )
+set(semantic_planner_BUILDTOOL_DEPENDS "catkin")

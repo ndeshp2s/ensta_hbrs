@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: p2os_urdf
+Description: Description of p2os_urdf
+Version: 1.0.12
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs

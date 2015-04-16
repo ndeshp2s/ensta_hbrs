@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: semantic_navigation_coordinator
+Description: Description of semantic_navigation_coordinator
+Version: 0.1.0
+Cflags: -I/home/brsu/catkin_ws/src/ensta_hbrs/semantic_navigation/semantic_navigation_coordinator/include
+Libs: -L/home/brsu/catkin_ws/devel/lib -lsemantic_navigation_coordinator
+Requires: 

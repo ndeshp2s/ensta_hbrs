@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: semantic_costmap_local
+Description: Description of semantic_costmap_local
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: 

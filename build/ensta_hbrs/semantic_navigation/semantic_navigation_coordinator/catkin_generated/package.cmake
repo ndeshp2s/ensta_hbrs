@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_navigation_coordinator")
+set(semantic_navigation_coordinator_MAINTAINER "niranjan <niranjan.deshpande187@gmail.com>")
+set(semantic_navigation_coordinator_DEPRECATED "")
+set(semantic_navigation_coordinator_VERSION "0.1.0")
+set(semantic_navigation_coordinator_BUILD_DEPENDS "nav_msgs" "std_msgs" "tf" "roscpp" "costmap_2d" "semantic_costmap_global" "semantic_planner_global")
+set(semantic_navigation_coordinator_RUN_DEPENDS "semantic_planner_global" "nav_msgs" "std_msgs" "tf" "roscpp" "costmap_2d" "semantic_costmap_global")
+set(semantic_navigation_coordinator_BUILDTOOL_DEPENDS "catkin")

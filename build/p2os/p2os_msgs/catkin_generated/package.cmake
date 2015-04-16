@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "p2os_msgs")
+set(p2os_msgs_MAINTAINER "Hunter Allen <hunter.allen@vanderbilt.edu>")
+set(p2os_msgs_DEPRECATED "")
+set(p2os_msgs_VERSION "1.0.12")
+set(p2os_msgs_BUILD_DEPENDS "message_generation" "std_msgs")
+set(p2os_msgs_RUN_DEPENDS "std_msgs" "message_runtime")
+set(p2os_msgs_BUILDTOOL_DEPENDS "catkin")

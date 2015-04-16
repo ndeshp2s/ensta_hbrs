@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "p2os_teleop")
+set(p2os_teleop_MAINTAINER "Hunter Allen <hunter.allen@vanderbilt.edu>")
+set(p2os_teleop_DEPRECATED "")
+set(p2os_teleop_VERSION "1.0.12")
+set(p2os_teleop_BUILD_DEPENDS "sensor_msgs" "tf" "std_msgs" "geometry_msgs")
+set(p2os_teleop_RUN_DEPENDS "sensor_msgs" "geometry_msgs" "tf" "std_msgs")
+set(p2os_teleop_BUILDTOOL_DEPENDS "catkin")

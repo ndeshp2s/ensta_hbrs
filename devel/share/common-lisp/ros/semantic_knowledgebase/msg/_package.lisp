@@ -1,0 +1,17 @@
+(cl:defpackage semantic_knowledgebase-msg
+  (:use )
+  (:export
+   "<OBJECT>"
+   "OBJECT"
+   "<GEOMETRICPROPERTIES>"
+   "GEOMETRICPROPERTIES"
+   "<SEMANTICPROPERTIES>"
+   "SEMANTICPROPERTIES"
+   "<BOUNDINGBOX>"
+   "BOUNDINGBOX"
+   "<OBJECTLIST>"
+   "OBJECTLIST"
+   "<OBJECTINSTANCE>"
+   "OBJECTINSTANCE"
+  ))
+

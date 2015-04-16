@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_costmap_global")
+set(semantic_costmap_global_MAINTAINER "niranjan <niranjan.deshpande187@gmail.com>")
+set(semantic_costmap_global_DEPRECATED "")
+set(semantic_costmap_global_VERSION "0.1.0")
+set(semantic_costmap_global_BUILD_DEPENDS "nav_msgs" "std_msgs" "tf" "roscpp" "costmap_2d")
+set(semantic_costmap_global_RUN_DEPENDS "costmap_2d" "tf" "nav_msgs" "std_msgs" "roscpp")
+set(semantic_costmap_global_BUILDTOOL_DEPENDS "catkin")

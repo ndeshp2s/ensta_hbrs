@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semantic_navigation")
+set(semantic_navigation_MAINTAINER "Niranjan Deshpande <niranjan.deshpande187@gmail.com>")
+set(semantic_navigation_DEPRECATED "")
+set(semantic_navigation_VERSION "0.1.0")
+set(semantic_navigation_BUILD_DEPENDS )
+set(semantic_navigation_RUN_DEPENDS )
+set(semantic_navigation_BUILDTOOL_DEPENDS "catkin")

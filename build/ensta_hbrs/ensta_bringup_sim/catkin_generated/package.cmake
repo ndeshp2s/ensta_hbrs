@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ensta_bringup_sim")
+set(ensta_bringup_sim_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(ensta_bringup_sim_DEPRECATED "")
+set(ensta_bringup_sim_VERSION "0.0.0")
+set(ensta_bringup_sim_BUILD_DEPENDS )
+set(ensta_bringup_sim_RUN_DEPENDS )
+set(ensta_bringup_sim_BUILDTOOL_DEPENDS "catkin")

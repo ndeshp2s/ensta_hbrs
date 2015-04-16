@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: pioneer3dx_teleop
+Description: Description of pioneer3dx_teleop
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/install/lib -llib
+Requires: geometry_msgs sensor_msgs tf std_msgs

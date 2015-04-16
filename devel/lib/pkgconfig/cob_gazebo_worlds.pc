@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/devel
+
+Name: cob_gazebo_worlds
+Description: Description of cob_gazebo_worlds
+Version: 0.6.2
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/devel/lib 
+Requires: gazebo_ros kdl_parser tf

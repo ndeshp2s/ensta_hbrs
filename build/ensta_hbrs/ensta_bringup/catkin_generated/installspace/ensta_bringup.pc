@@ -1,0 +1,8 @@
+prefix=/home/brsu/catkin_ws/install
+
+Name: ensta_bringup
+Description: Description of ensta_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brsu/catkin_ws/install/lib 
+Requires: 

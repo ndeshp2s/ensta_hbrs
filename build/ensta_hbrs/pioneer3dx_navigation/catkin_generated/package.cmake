@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pioneer3dx_navigation")
+set(pioneer3dx_navigation_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(pioneer3dx_navigation_DEPRECATED "")
+set(pioneer3dx_navigation_VERSION "0.0.0")
+set(pioneer3dx_navigation_BUILD_DEPENDS )
+set(pioneer3dx_navigation_RUN_DEPENDS )
+set(pioneer3dx_navigation_BUILDTOOL_DEPENDS "catkin")

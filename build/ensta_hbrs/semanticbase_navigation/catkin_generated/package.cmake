@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "semanticbase_navigation")
+set(semanticbase_navigation_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(semanticbase_navigation_DEPRECATED "")
+set(semanticbase_navigation_VERSION "0.0.0")
+set(semanticbase_navigation_BUILD_DEPENDS )
+set(semanticbase_navigation_RUN_DEPENDS )
+set(semanticbase_navigation_BUILDTOOL_DEPENDS "catkin")

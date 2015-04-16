@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "layers")
+set(layers_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(layers_DEPRECATED "")
+set(layers_VERSION "0.0.0")
+set(layers_BUILD_DEPENDS "costmap_2d" "dynamic_reconfigure" "roscpp" "geometry_msgs" "laser_geometry" "nav_msgs" "map_msgs" "message_filters" "message_generation" "roscpp" "sensor_msgs" "std_msgs" "tf" "query_knowledgebase" "semantic_knowledgebase")
+set(layers_RUN_DEPENDS "costmap_2d" "message_runtime" "message_generation" "dynamic_reconfigure" "geometry_msgs" "laser_geometry" "map_msgs" "message_filters" "nav_msgs" "roscpp" "sensor_msgs" "std_msgs" "tf" "query_knowledgebase" "semantic_knowledgebase")
+set(layers_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ensta_robots")
+set(ensta_robots_MAINTAINER "niranjan <niranjan@todo.todo>")
+set(ensta_robots_DEPRECATED "")
+set(ensta_robots_VERSION "0.0.0")
+set(ensta_robots_BUILD_DEPENDS "sensor_msgs" "nav_msgs" "tf")
+set(ensta_robots_RUN_DEPENDS "roscpp" "sensor_msgs" "nav_msgs" "tf" "robot_state_publisher")
+set(ensta_robots_BUILDTOOL_DEPENDS "catkin")

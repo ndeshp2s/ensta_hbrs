@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "p3dx_control")
+set(p3dx_control_MAINTAINER "Rafael Berkvens <rafael.berkvens@uantwerpen.be>")
+set(p3dx_control_DEPRECATED "")
+set(p3dx_control_VERSION "0.0.1")
+set(p3dx_control_BUILD_DEPENDS "controller_manager")
+set(p3dx_control_RUN_DEPENDS "controller_manager")
+set(p3dx_control_BUILDTOOL_DEPENDS "catkin")
