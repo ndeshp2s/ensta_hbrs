@@ -29,14 +29,12 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
-    <!-- send door urdf to param server -->
-    <param name="door" textfile="/home/brsu/catkin_ws/src/ensta_hbrs/ensta_environments/gazebo_default_objects/gazebo_models/hinged_door/model-1_4.sdf" />
+    <!--    <param name="door" textfile="/home/niranjan/catkin_ws/src/ensta_hbrs/ensta_environments/gazebo_default_objects/gazebo_models/hinged_door/model-1_4.sdf" />
 	
-    <!-- spawn uploaded door model -->
-    <node name="spawn_door" pkg="gazebo_ros" type="spawn_model" args="-sdf -param door  -x 1.95 -y 2.0 -z 0.01 -R 0 -P 0 -Y 1.57 -model door" respawn="false" output="screen" />
+    
+    <node name="spawn_door" pkg="gazebo_ros" type="spawn_model" args="-sdf -param door  -x 1.95 -y 2.0 -z 0.01 -R 0 -P 0 -Y 1.57 -model door" respawn="false" output="screen" /> -->
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
 
     
     <!-- send couch urdf to param server -->

@@ -19,12 +19,6 @@ find_package(catkin REQUIRED COMPONENTS
   semantic_knowledgebase
 )
 
-
-include_directories(include)
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
-
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS 
@@ -72,6 +66,15 @@ target_link_libraries(inflate_objects
    ${BOOST_LIBRARIES}
 )
 
+add_library(unknown_objects_layer src/unknown_objects_layer.cpp)
+target_link_libraries(unknown_objects_layer
+   ${catkin_LIBRARIES}
+   ${BOOST_LIBRARIES}
+   static_objects
+   dynamic_objects
+   inflate_objects
+)
+
 add_library(structural_objects_layer src/structural_objects_layer.cpp)
 target_link_libraries(structural_objects_layer
    ${catkin_LIBRARIES}
@@ -100,6 +103,9 @@ target_link_libraries(light_objects_layer
    dynamic_objects
    inflate_objects
 )
+
+
+
 
 
 

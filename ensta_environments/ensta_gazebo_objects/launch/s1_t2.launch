@@ -14,7 +14,7 @@
 
 
     <!-- send corrogated_box_two urdf to param server -->
-    <param name="corrogated_box_two" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/corrogated_box_two.urdf" /> -->
+    <param name="corrogated_box_two" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/corrogated_box_two.urdf" /> 
 	
     <!-- spawn uploaded stool model -->
     <node name="corrogated_box_two" pkg="gazebo_ros" type="spawn_model" args="-urdf -param corrogated_box_two -model corrogated_box_two -x 2 -y -3.5 -z 0.0 -R 3.14 -P 0 -Y 0" respawn="false" output="screen" /> 
@@ -24,13 +24,20 @@
 
 
     <!-- send corrogated_box_two urdf to param server -->
-    <param name="corrogated_box" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/corrogated_box.urdf" /> -->
-	
-    <!-- spawn uploaded stool model -->
-    <node name="corrogated_box1" pkg="gazebo_ros" type="spawn_model" args="-urdf -param corrogated_box -model corrogated_box1 -x 2.6 -y -0.750 -z 0.0 -R 3.14 -P 0 -Y 0" respawn="false" output="screen" /> 
+    <param name="corrogated_box" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/corrogated_box.urdf" /> 
 
     <!-- spawn uploaded stool model -->
     <node name="corrogated_box2" pkg="gazebo_ros" type="spawn_model" args="-urdf -param corrogated_box -model corrogated_box2 -x 4.5 -y -0.50 -z 0.0 -R 3.14 -P 0 -Y 0" respawn="false" output="screen" /> 
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- send box_wicker urdf to param server -->
+    <param name="box_wicker" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/box_wicker.urdf" /> -->
+	
+    <!-- spawn uploaded stool model -->
+    <node name="box_wicker_one" pkg="gazebo_ros" type="spawn_model" args="-urdf -param box_wicker -model box_wicker_one -x 2.5 -y -0.60 -z 1.0 -R 0 -P 0 -Y 0" respawn="false" output="screen" /> 
+
 
 
 </launch>

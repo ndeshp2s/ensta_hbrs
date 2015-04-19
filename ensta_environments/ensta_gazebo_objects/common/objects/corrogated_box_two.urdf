@@ -9,14 +9,14 @@
   <visual>
    <origin xyz="0 0 0.0" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://ensta_gazebo_objects/Media/models/corrogated_box.dae" scale="1.5 1.5 2.5"/>
+     <mesh filename="package://ensta_gazebo_objects/Media/models/corrogated_box.dae" scale="1.5 1.5 2.0"/>
      
    </geometry>
   </visual>
   <collision>
    <origin xyz="0 0 0.0" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://ensta_gazebo_objects/Media/models/corrogated_box.dae" scale="1.5 1.5 1"/>>
+     <mesh filename="package://ensta_gazebo_objects/Media/models/corrogated_box.dae" scale="1.5 1.5 2.0"/>>
      
    </geometry>
   </collision>     

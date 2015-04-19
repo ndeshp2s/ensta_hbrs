@@ -140,17 +140,16 @@ double* min_y, double* max_x, double* max_y)
 
     light_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
 
-    updateWithMax(light_objects_costmap_, min_i, min_j, max_i, max_j);
-    inflate_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
-//    updateMax(light_objects_costmap_, min_i, min_j, max_i, max_j);
-     
- //    static_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
-         
- //    dynamic_objects_.costs(light_objects_costmap_, min_i, min_j, max_i, max_j);
-    
- //    inflate_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
+//    updateWithMax(light_objects_costmap_, min_i, min_j, max_i, max_j);
+//    inflate_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
 
-    updateMax(master_grid, min_i, min_j, max_i, max_j);
+
+     
+     static_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
+     dynamic_objects_.costs(light_objects_costmap_, min_i, min_j, max_i, max_j);
+     inflate_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
+
+     updateMax(master_grid, min_i, min_j, max_i, max_j);
   }
 
   void LightObjectsLayer::updateMax(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
@@ -166,15 +165,17 @@ double* min_y, double* max_x, double* max_y)
       unsigned int it = j * span + min_i;
       for (int i = min_i; i < max_i; i++)
       {
-        if (local_array[it] == NO_INFORMATION){
-          it++;
-          continue;
-        }
-
-        unsigned char old_cost = master_array[it];
-        if (local_array[it] != FREE_SPACE)
-          master_array[it] = local_array[it];
+        if(local_array[it] != costmap_2d::FREE_SPACE)
+        {
           costmap_[it] = local_array[it];
+          unsigned char old_cost = master_array[it];
+          if (old_cost == costmap_2d::NO_INFORMATION || old_cost < local_array[it])
+          {
+            master_array[it] = local_array[it];
+          }
+          
+          
+        }
         it++;
       }
     }

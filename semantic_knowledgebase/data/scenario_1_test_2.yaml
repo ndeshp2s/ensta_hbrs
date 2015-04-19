@@ -684,11 +684,11 @@
           z: 0.0
         -
           x: 188.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
@@ -699,7 +699,7 @@
     sub_category: 'Chair'
 
 - 
-  instance: 'unknown-01'
+  instance: 'chair-02'
   geometry: 
     pose: 
       position: 
@@ -714,24 +714,164 @@
     bounding_box: 
       vertices: 
         -
-          x: 0.0
-          y: 0.0
+          x: 188.0
+          y: 74.0
           z: 0.0
         -
-          x: 0.0
-          y: 280.0
+          x: 188.0
+          y: 90.0
           z: 0.0
         -
-          x: 280.0
-          y: 280.0
+          x: 172.0
+          y: 90.0
           z: 0.0
         -
-          x: 280.0
-          y: 0.0
+          x: 172.0
+          y: 74.0
           z: 0.0  
   semantics: 
-    category: 'unknown_object' 
-    sub_category: 'unknown'
+    category: 'heavy_object' 
+    sub_category: 'Chair'
+
+- 
+  instance: 'chair-03'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 188.0
+          y: 107.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 122.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 122.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 107.0
+          z: 0.0  
+  semantics: 
+    category: 'heavy_object' 
+    sub_category: 'Chair'
+
+- 
+  instance: 'corrogated_box-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 188.0
+          y: 60.0
+          z: 0.0
+        -
+          x: 188.0
+          y: 70.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 70.0
+          z: 0.0
+        -
+          x: 172.0
+          y: 60.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'corrogated_box-02'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 238.0
+          y: 124.0
+          z: 0.0
+        -
+          x: 238.0
+          y: 136.0
+          z: 0.0
+        -
+          x: 226.0
+          y: 136.0
+          z: 0.0
+        -
+          x: 226.0
+          y: 124.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
+
+- 
+  instance: 'wicker_box-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 197.0
+          y: 122.0
+          z: 0.0
+        -
+          x: 197.0
+          y: 132.0
+          z: 0.0
+        -
+          x: 186.0
+          y: 132.0
+          z: 0.0
+        -
+          x: 186.0
+          y: 122.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Box'
  
 
 

@@ -21,9 +21,11 @@ namespace semantic_costmap
     current_ = true;
     global_frame_ = layered_costmap_->getGlobalFrameID();
 
+
+
     client_class_ = new ClientClass(g_nh);
 
- /* subscribe_to_updates_ = false;
+    subscribe_to_updates_ = false;
     track_unknown_space_ = true;
     use_maximum_ = false;
     temp_lethal_threshold = int(100);
@@ -35,9 +37,9 @@ namespace semantic_costmap
     temp_unknown_cost_value = -1;
 
     lethal_threshold_ = std::max(std::min(temp_lethal_threshold, 100), 0);
-    unknown_cost_value_ = temp_unknown_cost_value;*/
+    unknown_cost_value_ = temp_unknown_cost_value;
 
-    nh.param("subscribe_to_updates", subscribe_to_updates_, false);
+/*    nh.param("subscribe_to_updates", subscribe_to_updates_, false);
     nh.param("track_unknown_space", track_unknown_space_, true);
     nh.param("use_maximum", use_maximum_, false);
 
@@ -47,7 +49,7 @@ namespace semantic_costmap
     nh.param("unknown_cost_value", temp_unknown_cost_value, int(-1));
     nh.param("trinary_costmap", trinary_costmap_, true);
     lethal_threshold_ = std::max(std::min(temp_lethal_threshold, 100), 0);
-    unknown_cost_value_ = temp_unknown_cost_value;
+    unknown_cost_value_ = temp_unknown_cost_value;*/
   
     matchSize();
 
@@ -169,7 +171,7 @@ namespace semantic_costmap
     for (unsigned int j = 0; j < size_x; ++j)
     {
       unsigned char value = map.data[index];
-      costmap[index] = interpretValue(value, j, i);
+      costmap_[index] = interpretValue(value, j, i);
       /*if(costmap_[index] == LETHAL_OBSTACLE)
       {
         ROS_INFO("Value:%d", costmap_[index]);

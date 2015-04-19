@@ -283,7 +283,7 @@ double* min_y, double* max_x, double* max_y)
         }
  
         unsigned int index = getIndex(mx, my);
-        costmap[index] = LETHAL_OBSTACLE;
+        costmap_[index] = LETHAL_OBSTACLE;
         touch(px, py, min_x, min_y, max_x, max_y);   
        }
     }
@@ -412,7 +412,7 @@ double* min_y, double* max_x, double* max_y)
       
 
       unsigned int cell_raytrace_range = cellDistance(clearing_observation.raytrace_range_);
-      MarkCell marker(costmap, FREE_SPACE);
+      MarkCell marker(costmap_, FREE_SPACE);
       //and finally... we can execute our trace to clear obstacles along that line
 //      ROS_INFO("x0:%d", x0);
 //      ROS_INFO("y0:%d", y0);

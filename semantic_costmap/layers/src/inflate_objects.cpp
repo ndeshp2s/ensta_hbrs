@@ -30,7 +30,7 @@ namespace semantic_costmap
 
     inflation_radius_ = inflation_radius;
     weight_ = weight; 
-    inscribed_radius_ = 0.46;
+    inscribed_radius_ = 0.30;
 
     //inflation_radius_ = 0.5;
     //weight_ = 10.0;  

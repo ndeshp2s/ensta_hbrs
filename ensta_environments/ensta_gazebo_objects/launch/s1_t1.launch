@@ -24,7 +24,7 @@
     <param name="box_wicker" command="$(find xacro)/xacro.py $(find ensta_gazebo_objects)/common/objects/box_wicker.urdf" /> 
 
     <!-- spawn uploaded stool model -->
-    <node name="gazebo_world_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param box_wicker -model box_wicker -x -1.0 -y -1.5 -z 0.15" respawn="false" output="screen" /> 
+    <node name="gazebo_world_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param box_wicker -model box_wicker -x -1.0 -y -1.5 -z 1.0" respawn="false" output="screen" /> 
 
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->

@@ -1,8 +1,8 @@
-#include <layers/heavy_objects_layer.h>
+#include <layers/unknown_objects_layer.h>
 #include <costmap_2d/costmap_math.h>
 #include <pluginlib/class_list_macros.h>
  
-PLUGINLIB_EXPORT_CLASS(semantic_costmap::HeavyObjectsLayer, costmap_2d::Layer)
+PLUGINLIB_EXPORT_CLASS(semantic_costmap::UnknownObjectsLayer, costmap_2d::Layer)
 
 using costmap_2d::NO_INFORMATION;
 using costmap_2d::LETHAL_OBSTACLE;
@@ -12,7 +12,7 @@ using costmap_2d::FREE_SPACE;
 namespace semantic_costmap
 {
 
-    void HeavyObjectsLayer::onInitialize()
+    void UnknownObjectsLayer::onInitialize()
     {
      ros::NodeHandle nh("~/" + name_), g_nh;
      
@@ -22,12 +22,12 @@ namespace semantic_costmap
 
      current_ = true;
 
-     object_type = "heavy_object";
+     object_type = "unknown_object";
      
      static_objects_.initialize(layered_costmap_, name_ + "_static_objects", tf_);
     
      ROS_INFO("Requesting the map...");
-     map_sub_ = g_nh.subscribe("map", 1, &HeavyObjectsLayer::incomingMap, this);
+     map_sub_ = g_nh.subscribe("map", 1, &UnknownObjectsLayer::incomingMap, this);
      map_received_ = false;
      has_updated_data_ = false;
      ros::Rate r(10);
@@ -54,15 +54,15 @@ namespace semantic_costmap
     
   }
 
-  void HeavyObjectsLayer::setupDynamicReconfigure(ros::NodeHandle& nh)
+  void UnknownObjectsLayer::setupDynamicReconfigure(ros::NodeHandle& nh)
   {
     dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
-    dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(&HeavyObjectsLayer::reconfigureCB, this, _1, _2);
+    dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(&UnknownObjectsLayer::reconfigureCB, this, _1, _2);
 
      dsrv_->setCallback(cb);
   }
 
-  void HeavyObjectsLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
+  void UnknownObjectsLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
   {
       enabled_ = true;
       has_updated_data_ = true;
@@ -71,14 +71,14 @@ namespace semantic_costmap
       height_ = size_y_;
   }
 
-  HeavyObjectsLayer::~HeavyObjectsLayer()
+  UnknownObjectsLayer::~UnknownObjectsLayer()
   {
     if(dsrv_)
       delete dsrv_;
 
   }
 
-  void HeavyObjectsLayer::incomingMap(const nav_msgs::OccupancyGridConstPtr new_map)
+  void UnknownObjectsLayer::incomingMap(const nav_msgs::OccupancyGridConstPtr new_map)
   {
    
     unsigned int size_x = new_map->info.width, size_y = new_map->info.height;
@@ -116,7 +116,7 @@ namespace semantic_costmap
      static_objects_.incomingMap(*new_map, object_type, costmap_);
   }
 
-  void HeavyObjectsLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
+  void UnknownObjectsLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
 double* min_y, double* max_x, double* max_y)
   {
     
@@ -154,9 +154,9 @@ double* min_y, double* max_x, double* max_y)
        
   }
 
-  void HeavyObjectsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
+  void UnknownObjectsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
   {
-    heavy_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
+    unknown_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
 //    updateWithMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
 //    inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
 //    updateMax(master_grid, min_i, min_j, max_i, max_j);
@@ -175,20 +175,20 @@ double* min_y, double* max_x, double* max_y)
 //     updateMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
 
 
-    static_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-    dynamic_objects_.costs(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-    inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
+    static_objects_.updateCosts(unknown_objects_costmap_, min_i, min_j, max_i, max_j);
+    dynamic_objects_.costs(unknown_objects_costmap_, min_i, min_j, max_i, max_j);
+    inflate_objects_.updateCosts(unknown_objects_costmap_, min_i, min_j, max_i, max_j);
     //updateWithMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
     updateMax(master_grid, min_i, min_j, max_i, max_j);
      
 
   }
 
-  void HeavyObjectsLayer::updateMax(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
+  void UnknownObjectsLayer::updateMax(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
   {
 
     unsigned char* master_array = master_grid.getCharMap();
-    unsigned char* local_array = heavy_objects_costmap_.getCharMap();
+    unsigned char* local_array = unknown_objects_costmap_.getCharMap();
 
     unsigned int span = master_grid.getSizeInCellsX();
 
@@ -214,29 +214,29 @@ double* min_y, double* max_x, double* max_y)
   }
 
 
-  void HeavyObjectsLayer::activate()
+  void UnknownObjectsLayer::activate()
   {
     onInitialize();
   }
 
-  void HeavyObjectsLayer::deactivate()
+  void UnknownObjectsLayer::deactivate()
   {    
     map_sub_.shutdown(); 
   }
 
-  void HeavyObjectsLayer::reset()
+  void UnknownObjectsLayer::reset()
   {
     deactivate();
     activate();
   } 
 
-  void HeavyObjectsLayer::matchSize()
+  void UnknownObjectsLayer::matchSize()
   {
     Costmap2D* master = layered_costmap_->getCostmap();
     resizeMap(master->getSizeInCellsX(), master->getSizeInCellsY(), master->getResolution(),
     master->getOriginX(), master->getOriginY());
 
-    heavy_objects_costmap_.resizeMap(master->getSizeInCellsX(), master->getSizeInCellsY(), master->getResolution(),
+    unknown_objects_costmap_.resizeMap(master->getSizeInCellsX(), master->getSizeInCellsY(), master->getResolution(),
     master->getOriginX(), master->getOriginY());
   }
 

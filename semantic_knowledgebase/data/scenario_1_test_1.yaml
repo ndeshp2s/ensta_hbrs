@@ -684,11 +684,11 @@
           z: 0.0
         -
           x: 188.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
@@ -699,7 +699,7 @@
     sub_category: 'Chair'
 
 - 
-  instance: 'unknown-01'
+  instance: 'lamp-01'
   geometry: 
     pose: 
       position: 
@@ -714,24 +714,58 @@
     bounding_box: 
       vertices: 
         -
-          x: 0.0
-          y: 0.0
+          x: 146.0
+          y: 92.0
           z: 0.0
         -
-          x: 0.0
-          y: 280.0
+          x: 146.0
+          y: 103.0
           z: 0.0
         -
-          x: 280.0
-          y: 280.0
+          x: 134.0
+          y: 103.0
           z: 0.0
         -
-          x: 280.0
-          y: 0.0
+          x: 134.0
+          y: 92.0
           z: 0.0  
   semantics: 
-    category: 'unknown_object' 
-    sub_category: 'unknown'
- 
+    category: 'heavy_object' 
+    sub_category: 'Lamp'
+
+- 
+  instance: 'stool-01'
+  geometry: 
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    bounding_box: 
+      vertices: 
+        -
+          x: 160.0
+          y: 100.0
+          z: 0.0
+        -
+          x: 160.0
+          y: 112.0
+          z: 0.0
+        -
+          x: 150.0
+          y: 112.0
+          z: 0.0
+        -
+          x: 150.0
+          y: 100.0
+          z: 0.0  
+  semantics: 
+    category: 'light_object' 
+    sub_category: 'Stool'
 
 
