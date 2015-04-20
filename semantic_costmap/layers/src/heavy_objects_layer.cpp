@@ -156,29 +156,16 @@ double* min_y, double* max_x, double* max_y)
 
   void HeavyObjectsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
   {
-    heavy_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
-//    updateWithMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-//    inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-//    updateMax(master_grid, min_i, min_j, max_i, max_j);
+/*  heavy_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
+    updateWithMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
+    inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
+    updateMax(master_grid, min_i, min_j, max_i, max_j);
+*/
 
-
-//      
-//      inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-     
-//     static_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-     
-    //  heavy_objects_costmap_.resetMap(min_i, min_j, max_i, max_j);   
-//     dynamic_objects_.costs(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-    
-//     inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-
-//     updateMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-
-
+    heavy_objects_costmap_.resetMap(min_i, min_j, max_i, max_j);
     static_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
     dynamic_objects_.costs(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
     inflate_objects_.updateCosts(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
-    //updateWithMax(heavy_objects_costmap_, min_i, min_j, max_i, max_j);
     updateMax(master_grid, min_i, min_j, max_i, max_j);
      
 
@@ -199,11 +186,12 @@ double* min_y, double* max_x, double* max_y)
       {
         if(local_array[it] != costmap_2d::FREE_SPACE)
         {
-          costmap_[it] = local_array[it];
+          
           unsigned char old_cost = master_array[it];
           if (old_cost == costmap_2d::NO_INFORMATION || old_cost < local_array[it])
           {
             master_array[it] = local_array[it];
+	    costmap_[it] = local_array[it];
           }
           
           

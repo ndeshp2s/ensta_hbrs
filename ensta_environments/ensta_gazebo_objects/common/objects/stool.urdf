@@ -29,13 +29,10 @@
   </link>
 
   <gazebo reference="stool">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>true</turnGravityOff>
+    <material>Gazebo/Brown</material>
   </gazebo>
 
-  <gazebo>
-    <static>false</static>
-  </gazebo>
+
 
 </robot>
 
