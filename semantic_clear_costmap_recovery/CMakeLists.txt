@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   visualization_msgs
 )
 
+
 find_package(Eigen REQUIRED)
 find_package(PCL REQUIRED)
 

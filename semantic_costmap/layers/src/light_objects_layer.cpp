@@ -32,7 +32,7 @@ namespace semantic_costmap
      has_updated_data_ = false;
      ros::Rate r(10);
 
-     double inflation_radius = 0.5;
+     double inflation_radius = 0.52;
      double weight = 10.0;
 
      while (!map_received_ && g_nh.ok())
@@ -144,7 +144,7 @@ double* min_y, double* max_x, double* max_y)
     updateMax(master_grid, min_i, min_j, max_i, max_j);
 */
 
-     
+    light_objects_costmap_.resetMap(min_i, min_j, max_i, max_j); 
     static_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
     dynamic_objects_.costs(light_objects_costmap_, min_i, min_j, max_i, max_j);
     inflate_objects_.updateCosts(light_objects_costmap_, min_i, min_j, max_i, max_j);
@@ -165,6 +165,7 @@ double* min_y, double* max_x, double* max_y)
       unsigned int it = j * span + min_i;
       for (int i = min_i; i < max_i; i++)
       {
+        costmap_[it] = local_array[it];
         if(local_array[it] != costmap_2d::FREE_SPACE)
         {
           
@@ -172,7 +173,7 @@ double* min_y, double* max_x, double* max_y)
           if (old_cost == costmap_2d::NO_INFORMATION || old_cost < local_array[it])
           {
             master_array[it] = local_array[it];
-            costmap_[it] = local_array[it];
+            
           }
           
           

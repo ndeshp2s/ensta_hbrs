@@ -11,7 +11,7 @@ global_costmap:
 #        - {name: stactic_layer,     type: "costmap_2d::StaticLayer"}
 #        - {name: obstacles, type: "semantic_costmap::Obstacles"}
 #        - {name: unknown_objects_layer, type: "semantic_costmap::UnknownObjectsLayer"}
-#        - {name: structural_objects, type: "semantic_costmap::StructuralObjectsLayer"}
+        - {name: structural_objects, type: "semantic_costmap::StructuralObjectsLayer"}
         - {name: heavy_objects, type: "semantic_costmap::HeavyObjectsLayer"}
         - {name: light_objects, type: "semantic_costmap::LightObjectsLayer"}
 #        - {name: obstacles, type: "semantic_costmap::Obstacles"}

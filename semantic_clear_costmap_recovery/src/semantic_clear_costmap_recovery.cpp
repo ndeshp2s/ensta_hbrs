@@ -171,7 +171,7 @@ namespace semantic_clear_costmap_recovery {
           continue;
         }
         unsigned char cost = grid[it];
-        if (cost != costmap_2d::FREE_SPACE && cost != costmap_2d::NO_INFORMATION)
+        if (cost != costmap_2d::FREE_SPACE && cost != costmap_2d::NO_INFORMATION && master_array[it] == cost)
           master_array[it] = costmap_2d::FREE_SPACE;
         
         it++;

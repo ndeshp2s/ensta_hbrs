@@ -139,18 +139,18 @@ double* min_y, double* max_x, double* max_y)
 
   void StructuralObjectsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i, int max_j)
   {
+    static_objects_.updateCosts(structural_objects_costmap_, min_i, min_j, max_i, max_j);
+    inflate_objects_.updateCosts(structural_objects_costmap_, min_i, min_j, max_i, max_j);
+    updateMax(master_grid, min_i, min_j, max_i, max_j);
       
 //     updateWithMax(structural_objects_costmap_, min_i, min_j, max_i, max_j);
-     static_objects_.updateCosts(structural_objects_costmap_, min_i, min_j, max_i, max_j);
+     
          
 //     dynamic_objects_.costs(light_objects_costmap_, min_i, min_j, max_i, max_j);
     
-     inflate_objects_.updateCosts(structural_objects_costmap_, min_i, min_j, max_i, max_j);
+     
 
 //     updateMax(master_grid, min_i, min_j, max_i, max_j);
-
-      updateMax(master_grid, min_i, min_j, max_i, max_j);
-
 
   }
 
