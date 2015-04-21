@@ -574,20 +574,20 @@
     bounding_box: 
       vertices: 
         -
-          x: 250.0
-          y: 58.0
+          x: 258.0
+          y: 56.0
           z: 0.0
         -
-          x: 250.0
-          y: 78.0
+          x: 258.0
+          y: 75.0
           z: 0.0
         -
-          x: 230.0
-          y: 78.0
+          x: 236.0
+          y: 75.0
           z: 0.0
         -
-          x: 230.0
-          y: 58.0
+          x: 236.0
+          y: 56.0
           z: 0.0  
   semantics: 
     category: 'heavy_object' 
@@ -680,19 +680,19 @@
       vertices: 
         -
           x: 188.0
-          y: 90.0
+          y: 92.0
           z: 0.0
         -
           x: 188.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
-          y: 110.0
+          y: 105.0
           z: 0.0
         -
           x: 172.0
-          y: 90.0
+          y: 92.0
           z: 0.0  
   semantics: 
     category: 'light_object' 

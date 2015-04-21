@@ -78,7 +78,7 @@
     <param name="table" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/table.urdf" />
 	
     <!-- spawn uploaded table model -->
-    <node name="spawn_table" pkg="gazebo_ros" type="spawn_model" args="-urdf -param table  -x 5 -y -3.5 -z 0.27 -R 0 -P 0 -Y 0 -model table1" respawn="false" output="screen" />
+    <node name="spawn_table" pkg="gazebo_ros" type="spawn_model" args="-urdf -param table  -x 5.2 -y -3.6 -z 0.27 -R 0 -P 0 -Y 0 -model table1" respawn="false" output="screen" />
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -87,7 +87,8 @@
     <param name="chair_wicker" command="$(find xacro)/xacro.py $(find cob_gazebo_objects)/objects/chair_wicker.urdf" />
 	
     <!-- spawn uploaded table model -->
-    <node name="spawn_chair_wicker" pkg="gazebo_ros" type="spawn_model" args="-urdf -param chair_wicker  -x 2.0 -y -2.0 -z 0.0 -R 0 -P 0 -Y 1.57 -model chair_wicker1" respawn="false" output="screen" />
+    <!--<node name="spawn_chair_wicker" pkg="gazebo_ros" type="spawn_model" args="-urdf -param chair_wicker  -x 2.0 -y -2.0 -z 0.0 -R 0 -P 0 -Y 1.57 -model chair_wicker1" respawn="false" output="screen" /> -->
+    <node name="spawn_chair_wicker" pkg="gazebo_ros" type="spawn_model" args="-urdf -param chair_wicker  -x 1.85 -y -2.0 -z 0.0 -R 0 -P 0 -Y 1.57 -model chair_wicker1" respawn="false" output="screen" />
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
